@@ -13,7 +13,7 @@ import {
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-export const NavBar = () => {
+export const NavBar = ({ language }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -38,7 +38,7 @@ export const NavBar = () => {
               : "opacity-0 -translate-x-full "
           } transition-all whitespace-nowrap text-center w-full`}
         >
-          Home
+          {language.navbar.home}
         </span>
       </Link>
       <Link
@@ -53,7 +53,7 @@ export const NavBar = () => {
               : "opacity-0 -translate-x-full "
           } transition-all whitespace-nowrap text-center w-full`}
         >
-          About Me
+          {language.navbar.about}
         </span>
       </Link>
       <Link
@@ -68,7 +68,7 @@ export const NavBar = () => {
               : "opacity-0 -translate-x-full "
           } transition-all whitespace-nowrap text-center w-full`}
         >
-          Skills
+          {language.navbar.skills}
         </span>
       </Link>
       <Link
@@ -83,7 +83,7 @@ export const NavBar = () => {
               : "opacity-0 -translate-x-full "
           } transition-all whitespace-nowrap text-center w-full`}
         >
-          Courses
+          {language.navbar.courses}
         </span>
       </Link>
       <Link
@@ -98,7 +98,7 @@ export const NavBar = () => {
               : "opacity-0 -translate-x-full "
           } transition-all whitespace-nowrap text-center w-full`}
         >
-          Projects
+          {language.navbar.projects}
         </span>
       </Link>
       <Link
@@ -113,7 +113,7 @@ export const NavBar = () => {
               : "opacity-0 -translate-x-full "
           } transition-all whitespace-nowrap text-center w-full`}
         >
-          Languages
+          {language.navbar.languages}
         </span>
       </Link>
       <Link
@@ -128,7 +128,7 @@ export const NavBar = () => {
               : "opacity-0 -translate-x-full "
           } transition-all whitespace-nowrap text-center w-full`}
         >
-          Contact
+          {language.navbar.contact}
         </span>
       </Link>
     </nav>
