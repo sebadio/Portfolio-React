@@ -18,6 +18,7 @@
     "description": "Hola, mi nombre es Sebastian. Soy un programador con conocimientos tanto del front-end como del back-end, aunque prefiero trabajar con el front-end. Me gusta trabajar en equipos para ganar experiencia y hacer crecer mis habilidades personales a un nivel mayor."
   },
   "skills": {
+    "title": "Habilidades",
     "description": "Como he mencionado antes, mis principales habilidades caen en el lado del front-end, y por lo tanto estas son las herramientas con las que trabajo.",
     "softSkillsDescription": "En un entorno de trabajo no sólo es importante el conocimiento técnico que tengas, así que aquí están mis puntos fuertes como individuo",
     "softSkills": [
@@ -33,6 +34,7 @@
     ]
   },
   "courses": {
+    "title": "Cursos",
     "description": "Estos son los cursos que he tomado",
     "coursesArray": [
       {
@@ -53,6 +55,7 @@
     ]
   },
   "projects": {
+    "title": "Proyectos",
     "description": "",
     "projectsArray": [
       {
@@ -94,6 +97,7 @@
     ]
   },
   "languages": {
+    "title": "Idiomas",
     "description": "Tal y como anticipa esta página, ¡soy bilingüe!",
     "es": {
       "title": "Español",
@@ -105,6 +109,7 @@
     }
   },
   "contact": {
+    "title": "Contactame",
     "linkedin": "https://www.linkedin.com/in/sebasti%C3%A1n-d%C3%ADaz-dopazo-95b688235/",
     "github": "https://github.com/sebadio?tab=repositories",
     "mail": "mailto:sebastiandiazdopazo@gmail.com",
