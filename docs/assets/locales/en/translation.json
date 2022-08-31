@@ -75,17 +75,20 @@
       {
         "title": "Ultimate Web",
         "description": "Learn web development with HTML, CSS, Bootstrap, ES6 React and Node",
-        "link": "https://www.udemy.com/course/ultimate-web/"
+        "link": "https://www.udemy.com/course/ultimate-web/",
+        "image": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/courses/ulimate_web.jpg"
       },
       {
         "title": "React: de cero a experto",
         "description": "Context API, MERN, Hooks, Firestore, JWT, Testing, Autenticaciones, Despliegues, CRUD, Logs, MUI, Multiple Routers...",
-        "link": "https://www.udemy.com/course/react-cero-experto/"
+        "link": "https://www.udemy.com/course/react-cero-experto/",
+        "image": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/courses/react_cero_experto.jpg"
       },
       {
         "title": "Learn JS HTML CSS",
         "description": "Learn the main languages that dominate the Internet: JavaScript, HTML5 and CSS3.",
-        "link": "https://www.udemy.com/course/fundamentos-de-programacion-con-javascript/"
+        "link": "https://www.udemy.com/course/fundamentos-de-programacion-con-javascript/",
+        "image": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/courses/aprende_js_html_css.jpg"
       }
     ]
   },
