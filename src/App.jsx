@@ -58,7 +58,7 @@ const App = () => {
           <div className="loading w-4 h-4 border-8 p-4 m-4 rounded-full border-t-slate-900 animate-spin"></div>
         }
       >
-        <BrowserRouter>
+        <BrowserRouter basename="/Portfolio-React/">
           <NavBar language={t("navbar", { returnObjects: true })} />
 
           <Routes>
