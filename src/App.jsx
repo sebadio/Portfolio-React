@@ -66,7 +66,10 @@ const App = () => {
               path="/"
               element={<Root language={t("root", { returnObjects: true })} />}
             />
-            <Route path="/about" element={<About />} />
+            <Route
+              path="/about"
+              element={<About language={t("about", { returnObjects: true })} />}
+            />
             <Route path="/skills" element={<Skills />} />
             <Route path="/courses" element={<Courses />} />
             <Route path="/proyects" element={<Proyects />} />
