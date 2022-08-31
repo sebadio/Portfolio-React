@@ -11,8 +11,8 @@ export const SwitchLanguage = ({ language, changeLanguage }) => {
         className="rounded-full transition-all"
         src={
           language === "es"
-            ? "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/src/media/spanish64.png"
-            : "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/src/media/english64.png"
+            ? "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/locales/es/spanish64.png"
+            : "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/locales/en/english64.png"
         }
         alt={language === "es" ? "Cambiar Lenguage" : "Change Language"}
       />
