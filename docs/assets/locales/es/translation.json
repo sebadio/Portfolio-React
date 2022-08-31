@@ -13,7 +13,10 @@
     "languages": "Idiomas",
     "contact": "Contactame"
   },
-  "about": "Hola, mi nombre es Sebastian. Soy un programador con conocimientos tanto del front-end como del back-end, aunque prefiero trabajar con el front-end. Me gusta trabajar en equipos para ganar experiencia y hacer crecer mis habilidades personales a un nivel mayor.",
+  "about": {
+    "title": "Sobre mi",
+    "description": "Hola, mi nombre es Sebastian. Soy un programador con conocimientos tanto del front-end como del back-end, aunque prefiero trabajar con el front-end. Me gusta trabajar en equipos para ganar experiencia y hacer crecer mis habilidades personales a un nivel mayor."
+  },
   "skills": {
     "description": "Como he mencionado antes, mis principales habilidades caen en el lado del front-end, y por lo tanto estas son las herramientas con las que trabajo.",
     "softSkillsDescription": "En un entorno de trabajo no sólo es importante el conocimiento técnico que tengas, así que aquí están mis puntos fuertes como individuo",
