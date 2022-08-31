@@ -1,5 +1,6 @@
 {
   "es": {
+    "type": "es",
     "navbar": {
       "home": "Inicio",
       "about": "Sobre Mi",
@@ -106,6 +107,7 @@
     }
   },
   "en": {
+    "type": "en",
     "navbar": {
       "home": "Inicio",
       "about": "Sobre Mi",
