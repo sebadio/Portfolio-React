@@ -24,7 +24,7 @@ export const NavBar = ({ language }) => {
       onMouseLeave={() => {
         setIsHovered(false);
       }}
-      className="bg-[#252326] h-[10vh] lg:h-full lg:w-[10vw] lg:flex-col flex w-full absolute bottom-0 z-20 border-t-2 lg:border-t-0 lg:border-r-2 border-[#FFF5FF] shadow-2xl shadow-black "
+      className="bg-[#252326] h-[10vh] lg:h-full lg:w-[5vw] lg:hover:w-[10vw] transition-all lg:flex-col flex w-full absolute bottom-0 z-20 border-t-2 lg:border-t-0 lg:border-r-2 border-[#FFF5FF] shadow-2xl shadow-black "
     >
       <Link
         className="hover:bg-[#4D4352] hover:text-[#FFF5FF] lg:text-xl transition-all w-full h-full flex flex-col justify-center items-center "
