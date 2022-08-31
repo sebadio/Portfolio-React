@@ -4,7 +4,7 @@ export const SwitchLanguage = ({ language, changeLanguage }) => {
   return (
     <button
       onClick={changeLanguage}
-      className="rounded-full w-[3rem] h-[3rem] lg:w-auto lg:h-auto fixed top-2 right-2 transition-all opacity-40 hover:opacity-100"
+      className="rounded-full w-[3rem] h-[3rem] lg:w-auto lg:h-auto fixed top-2 right-2 transition-all shadow-lg shadow-black opacity-40 hover:opacity-100"
     >
       <img
         className="rounded-full transition-all"

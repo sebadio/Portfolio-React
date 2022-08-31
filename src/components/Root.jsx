@@ -16,7 +16,7 @@ export const Root = ({ language }) => {
             <p className="font-semibold text-lg">{language.description}</p>
           </div>
           <a
-            className="py-2 px-6 rounded-full border-2 w-max font-bold transition-all border-[#B2A7B8] hover:bg-[#4D4352]"
+            className="py-2 px-6 rounded-full border-2 w-max font-bold transition-all shadow-2xl shadow-black border-[#B2A7B8] hover:bg-[#4D4352]"
             href="https://sebadio.github.io/Portfolio-React/assets/CV.pdf"
             target="_blank"
             rel="noopener noreferrer"
