@@ -12,9 +12,16 @@ import {
 
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { useEffect } from "react";
 
 export const NavBar = ({ language }) => {
   const [isHovered, setIsHovered] = useState(false);
+  const [selectedLanguage, setSelectedLanguage] = useState(language);
+
+  useEffect(() => {
+    setSelectedLanguage(language);
+    console.log(language);
+  }, [language]);
 
   return (
     <nav
@@ -38,7 +45,7 @@ export const NavBar = ({ language }) => {
               : "opacity-0 -translate-x-full "
           } transition-all whitespace-nowrap text-center w-full`}
         >
-          {language.navbar.home}
+          {selectedLanguage && selectedLanguage.navbar.home}
         </span>
       </Link>
       <Link
@@ -53,7 +60,7 @@ export const NavBar = ({ language }) => {
               : "opacity-0 -translate-x-full "
           } transition-all whitespace-nowrap text-center w-full`}
         >
-          {language.navbar.about}
+          {selectedLanguage && selectedLanguage.navbar.about}
         </span>
       </Link>
       <Link
@@ -68,7 +75,7 @@ export const NavBar = ({ language }) => {
               : "opacity-0 -translate-x-full "
           } transition-all whitespace-nowrap text-center w-full`}
         >
-          {language.navbar.skills}
+          {selectedLanguage && selectedLanguage.navbar.skills}
         </span>
       </Link>
       <Link
@@ -83,7 +90,7 @@ export const NavBar = ({ language }) => {
               : "opacity-0 -translate-x-full "
           } transition-all whitespace-nowrap text-center w-full`}
         >
-          {language.navbar.courses}
+          {selectedLanguage && selectedLanguage.navbar.courses}
         </span>
       </Link>
       <Link
@@ -98,7 +105,7 @@ export const NavBar = ({ language }) => {
               : "opacity-0 -translate-x-full "
           } transition-all whitespace-nowrap text-center w-full`}
         >
-          {language.navbar.projects}
+          {selectedLanguage && selectedLanguage.navbar.projects}
         </span>
       </Link>
       <Link
@@ -113,7 +120,7 @@ export const NavBar = ({ language }) => {
               : "opacity-0 -translate-x-full "
           } transition-all whitespace-nowrap text-center w-full`}
         >
-          {language.navbar.languages}
+          {selectedLanguage && selectedLanguage.navbar.languages}
         </span>
       </Link>
       <Link
@@ -128,7 +135,7 @@ export const NavBar = ({ language }) => {
               : "opacity-0 -translate-x-full "
           } transition-all whitespace-nowrap text-center w-full`}
         >
-          {language.navbar.contact}
+          {selectedLanguage && selectedLanguage.navbar.contact}
         </span>
       </Link>
     </nav>

@@ -8,7 +8,7 @@
       "courses": "Cursos",
       "projects": "Proyecto",
       "languages": "Idiomas",
-      "contact": "Contacto"
+      "contact": "Contactame"
     },
     "about": "Hola, mi nombre es Sebastian. Soy un programador con conocimientos tanto del front-end como del back-end, aunque prefiero trabajar con el front-end. Me gusta trabajar en equipos para ganar experiencia y hacer crecer mis habilidades personales a un nivel mayor.",
     "skills": {
@@ -109,13 +109,13 @@
   "en": {
     "type": "en",
     "navbar": {
-      "home": "Inicio",
-      "about": "Sobre Mi",
-      "skills": "Habilidades",
-      "courses": "Cursos",
-      "projects": "Proyecto",
-      "languages": "Idiomas",
-      "contact": "Contacto"
+      "home": "Home",
+      "about": "About Me",
+      "skills": "Skills",
+      "courses": "Courses",
+      "projects": "Projects",
+      "languages": "Languages",
+      "contact": "Contact Me"
     },
     "about": "Hi! My name is Sebastian. I am a programmer with knowledge of both the front-end and the back-end, although I prefer working with the front-end kind of things. I like to work with teams to gain experience and grow my skills to a greater level.",
     "skills": {

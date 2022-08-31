@@ -1,1 +1,9 @@
-export * from "./";
+export { About } from "./About";
+export { Contact } from "./Contact";
+export { Courses } from "./Courses";
+export { Languages } from "./Languages";
+export { NavBar } from "./NavBar";
+export { Proyects } from "./Proyects";
+export { Root } from "./Root";
+export { Skills } from "./Skills";
+export { SwitchLanguage } from "./SwitchLanguage";
