@@ -1,5 +1,101 @@
 {
-  "es": {},
+  "es": {
+    "about": "Hola, mi nombre es Sebastian. Soy un programador con conocimientos tanto del front-end como del back-end, aunque prefiero trabajar con el front-end. Me gusta trabajar en equipos para ganar experiencia y hacer crecer mis habilidades personales a un nivel mayor.",
+    "skills": {
+      "description": "Como he mencionado antes, mis principales habilidades caen en el lado del front-end, y por lo tanto estas son las herramientas con las que trabajo.",
+      "softSkillsDescription": "En un entorno de trabajo no sólo es importante el conocimiento técnico que tengas, así que aquí están mis puntos fuertes como individuo",
+      "softSkills": [
+        "Tranquilo",
+        "Paciente",
+        "Respetuoso",
+        "Autorregulación",
+        "Autogestión",
+        "Curioso",
+        "Amistoso",
+        "Flexible y Adaptable",
+        "Multitarea"
+      ]
+    },
+    "courses": {
+      "description": "Estos son los cursos que he tomado",
+      "coursesArray": [
+        {
+          "title": "Ultimate Web",
+          "description": "Aprende Desarrollo Web con HTML, CSS, Bootstrap, ES6 React y Node",
+          "link": "https://www.udemy.com/course/ultimate-web/"
+        },
+        {
+          "title": "React: de cero a experto",
+          "description": "Context API, MERN, Hooks, Firestore, JWT, Testing, Autenticaciones, Despliegues, CRUD, Logs, MUI, Multiple Routers...",
+          "link": "https://www.udemy.com/course/react-cero-experto/"
+        },
+        {
+          "title": "Aprende JS HTML CSS",
+          "description": "Aprende los lenguajes que dominan el Internet: JavaScript, HTML5 and CSS3.",
+          "link": "https://www.udemy.com/course/fundamentos-de-programacion-con-javascript/"
+        }
+      ]
+    },
+    "projects": {
+      "description": "",
+      "projectsArray": [
+        {
+          "title": "PokeWordle",
+          "description": "Wordle fue tendencia en juegos de 2022 durante un tiempo, y pensé en hacer un Wordle... ¡pero con Pokemon en su lugar!",
+          "linkToPage": "https://sebadio.github.io/PokeWordle/",
+          "linkToGit": "https://github.com/sebadio/PokeWordle"
+        },
+        {
+          "title": "Password Generador",
+          "description": "Un generador de contraseñas seguras, si quieres una contraseña segura para que puedas asegurarte de que tu cuenta es lo más segura posible, puedes usar esta herramienta para ayudarte.",
+          "linkToPage": "https://sebadio.github.io/GeneradorPassword/",
+          "linkToGit": "https://github.com/sebadio/GeneradorPassword"
+        },
+        {
+          "title": "To Do App",
+          "description": "Una 'To Do App' hecha con JS, CSS y HTML.",
+          "linkToPage": "https://sebadio.github.io/ToDoApp/",
+          "linkToGit": "https://github.com/sebadio/ToDoApp"
+        },
+        {
+          "title": "Pomodoro App con Electron",
+          "description": "Pomodoro es una técnica de concentración por la que suelo optar para estudiar. Entonces decidí hacer mi propia aplicación Pomodoro de escritorio con Electron.",
+          "linkToPage": "https://github.com/sebadio/PomodoroApp",
+          "linkToGit": "https://github.com/sebadio/PomodoroApp/releases/tag/PomodoroV1.2"
+        },
+        {
+          "title": "Galeria React",
+          "description": "Una simple galería hecha con React. Todas las imágenes no tienen derechos de autor y fueron puestas gratuitamente en Unsplash.",
+          "linkToPage": "https://sebadio.github.io/React-Gallery/",
+          "linkToGit": "https://github.com/sebadio/React-Gallery"
+        },
+        {
+          "title": "JAP E-Commerce",
+          "description": "JAP ('Jovenes a Programar') es un programa uruguayo que enseña a los jóvenes del país, esta fue una experiencia de aprendizaje basada en proyectos en la que tuvimos que averiguar cómo hacer ciertos aspectos de la página web.",
+          "linkToPage": "https://sebadio.github.io/JAP-Workspace/",
+          "linkToGit": "https://github.com/sebadio/JAP-Workspace"
+        }
+      ]
+    },
+    "languages": {
+      "description": "Tal y como anticipa esta página, ¡soy bilingüe!",
+      "es": {
+        "title": "Español",
+        "description": "Tengo nivel nativo de español ya que soy de Uruguay y he vivido mucho tiempo en España."
+      },
+      "en": {
+        "title": "Ingles",
+        "description": "Tengo conocimientos de nivel profesional de la lengua inglesa (C1)."
+      }
+    },
+    "contact": {
+      "linkedin": "https://www.linkedin.com/in/sebasti%C3%A1n-d%C3%ADaz-dopazo-95b688235/",
+      "github": "https://github.com/sebadio?tab=repositories",
+      "mail": "mailto:sebastiandiazdopazo@gmail.com",
+      "phone": "tel:+59892302595",
+      "whatsapp": "https://wa.me/message/VUGV3ZGKPTZTO1"
+    }
+  },
   "en": {
     "about": "Hi! My name is Sebastian. I am a programmer with knowledge of both the front-end and the back-end, although I prefer working with the front-end kind of things. I like to work with teams to gain experience and grow my skills to a greater level.",
     "skills": {
@@ -43,34 +139,58 @@
         {
           "title": "PokeWordle",
           "description": "Wordle was a hit in the 2022 game trend for a while, and I thought about making a Wordle... but with Pokemon instead!",
-          "link": "https://sebadio.github.io/PokeWordle/"
+          "linkToPage": "https://sebadio.github.io/PokeWordle/",
+          "linkToGit": "https://github.com/sebadio/PokeWordle"
         },
         {
           "title": "Password Generator",
           "description": "A secure Password Generator, if you want a secure password so that you can make sure that your account is safe as possible, you can use this tool to help you.",
-          "link": "https://sebadio.github.io/GeneradorPassword/"
+          "linkToPage": "https://sebadio.github.io/GeneradorPassword/",
+          "linkToGit": "https://github.com/sebadio/GeneradorPassword"
         },
         {
           "title": "To Do App",
           "description": "A simple To Do App made with pure JS, CSS & HTML",
-          "link": "https://sebadio.github.io/ToDoApp/"
+          "linkToPage": "https://sebadio.github.io/ToDoApp/",
+          "linkToGit": "https://github.com/sebadio/ToDoApp"
         },
         {
           "title": "Pomodoro App with Electron",
           "description": "Pomodoro is a technique of concentrating that I often opt for studying. Then I decided to make my own Pomodoro desktop app with Electron.",
-          "link": "https://github.com/sebadio/PomodoroApp/releases/tag/PomodoroV1.2"
+          "linkToPage": "https://github.com/sebadio/PomodoroApp",
+          "linkToGit": "https://github.com/sebadio/PomodoroApp/releases/tag/PomodoroV1.2"
         },
         {
-          "title": "PokeWordle",
-          "description": "Wordle was a hit in the 2022 game trend for a while, and I thought about making a Wordle... but with Pokemon instead!",
-          "link": "https://sebadio.github.io/PokeWordle/"
+          "title": "React-Gallery",
+          "description": "A simple gallery made with React. All of the images have no copyright and were put free to use in Unsplash.",
+          "linkToPage": "https://sebadio.github.io/React-Gallery/",
+          "linkToGit": "https://github.com/sebadio/React-Gallery"
         },
         {
-          "title": "PokeWordle",
-          "description": "Wordle was a hit in the 2022 game trend for a while, and I thought about making a Wordle... but with Pokemon instead!",
-          "link": "https://sebadio.github.io/PokeWordle/"
+          "title": "JAP E-Commerce",
+          "description": "JAP ('Jovenes a Programar') is an Uruguayan program that teaches the young people of the country, this was a project-based learing experience in wich we had to figure out how to make certain aspects of the webpage.",
+          "linkToPage": "https://sebadio.github.io/JAP-Workspace/",
+          "linkToGit": "https://github.com/sebadio/JAP-Workspace"
         }
       ]
+    },
+    "languages": {
+      "description": "Just like this page anticipates, I am bilingual!",
+      "es": {
+        "title": "Spanish",
+        "description": "I have native level of Spanish since I am from Uruguay and have lived a long time in Spain."
+      },
+      "en": {
+        "title": "English",
+        "description": "I professional level knowledge of the English Language (C1)."
+      }
+    },
+    "contact": {
+      "linkedin": "https://www.linkedin.com/in/sebasti%C3%A1n-d%C3%ADaz-dopazo-95b688235/",
+      "github": "https://github.com/sebadio?tab=repositories",
+      "mail": "mailto:sebastiandiazdopazo@gmail.com",
+      "phone": "tel:+59892302595",
+      "whatsapp": "https://wa.me/message/VUGV3ZGKPTZTO1"
     }
   }
 }
