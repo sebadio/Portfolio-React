@@ -24,10 +24,10 @@ export const NavBar = ({ language }) => {
       onMouseLeave={() => {
         setIsHovered(false);
       }}
-      className="w-[6rem] transition-all hover:w-2/12 h-screen flex flex-col justify-evenly text-center border-r-2 shadow-2xl shadow-black border-[#FFF5FF]"
+      className="bg-[#252326] h-[10vh] lg:h-full lg:w-[10vw] lg:flex-col flex w-full absolute bottom-0 z-20 border-t-2 lg:border-t-0 lg:border-r-2 border-[#FFF5FF] shadow-2xl shadow-black "
     >
       <Link
-        className="hover:bg-[#4D4352] hover:text-[#FFF5FF] text-xl transition-all w-full h-full flex flex-col justify-center items-center "
+        className="hover:bg-[#4D4352] hover:text-[#FFF5FF] lg:text-xl transition-all w-full h-full flex flex-col justify-center items-center "
         to={"/"}
       >
         <FontAwesomeIcon icon={faHouse} />
@@ -36,13 +36,13 @@ export const NavBar = ({ language }) => {
             isHovered
               ? "opacity-100 translate-x-0"
               : "opacity-0 -translate-x-full "
-          } transition-all whitespace-nowrap text-center w-full`}
+          } transition-all whitespace-nowrap text-center w-full hidden lg:block`}
         >
           {language.home}
         </span>
       </Link>
       <Link
-        className="hover:bg-[#4D4352] hover:text-[#FFF5FF] text-xl transition-all w-full h-full flex flex-col justify-center items-center "
+        className="hover:bg-[#4D4352] hover:text-[#FFF5FF] lg:text-xl transition-all w-full h-full flex flex-col justify-center items-center "
         to={"/about"}
       >
         <FontAwesomeIcon icon={faIdBadge} />
@@ -51,13 +51,13 @@ export const NavBar = ({ language }) => {
             isHovered
               ? "opacity-100 translate-x-0"
               : "opacity-0 -translate-x-full "
-          } transition-all whitespace-nowrap text-center w-full`}
+          } transition-all whitespace-nowrap text-center w-full hidden lg:block`}
         >
           {language.about}
         </span>
       </Link>
       <Link
-        className="hover:bg-[#4D4352] hover:text-[#FFF5FF] text-xl transition-all w-full h-full flex flex-col justify-center items-center "
+        className="hover:bg-[#4D4352] hover:text-[#FFF5FF] lg:text-xl transition-all w-full h-full flex flex-col justify-center items-center "
         to={"/skills"}
       >
         <FontAwesomeIcon icon={faCode} />
@@ -66,13 +66,13 @@ export const NavBar = ({ language }) => {
             isHovered
               ? "opacity-100 translate-x-0"
               : "opacity-0 -translate-x-full "
-          } transition-all whitespace-nowrap text-center w-full`}
+          } transition-all whitespace-nowrap text-center w-full hidden lg:block`}
         >
           {language.skills}
         </span>
       </Link>
       <Link
-        className="hover:bg-[#4D4352] hover:text-[#FFF5FF] text-xl transition-all w-full h-full flex flex-col justify-center items-center "
+        className="hover:bg-[#4D4352] hover:text-[#FFF5FF] lg:text-xl transition-all w-full h-full flex flex-col justify-center items-center "
         to={"/courses"}
       >
         <FontAwesomeIcon icon={faChalkboardUser} />
@@ -81,13 +81,13 @@ export const NavBar = ({ language }) => {
             isHovered
               ? "opacity-100 translate-x-0"
               : "opacity-0 -translate-x-full "
-          } transition-all whitespace-nowrap text-center w-full`}
+          } transition-all whitespace-nowrap text-center w-full hidden lg:block`}
         >
           {language.courses}
         </span>
       </Link>
       <Link
-        className="hover:bg-[#4D4352] hover:text-[#FFF5FF] text-xl transition-all w-full h-full flex flex-col justify-center items-center "
+        className="hover:bg-[#4D4352] hover:text-[#FFF5FF] lg:text-xl transition-all w-full h-full flex flex-col justify-center items-center "
         to={"/projects"}
       >
         <FontAwesomeIcon icon={faListCheck} />
@@ -96,13 +96,13 @@ export const NavBar = ({ language }) => {
             isHovered
               ? "opacity-100 translate-x-0"
               : "opacity-0 -translate-x-full "
-          } transition-all whitespace-nowrap text-center w-full`}
+          } transition-all whitespace-nowrap text-center w-full hidden lg:block`}
         >
           {language.projects}
         </span>
       </Link>
       <Link
-        className="hover:bg-[#4D4352] hover:text-[#FFF5FF] text-xl transition-all w-full h-full flex flex-col justify-center items-center "
+        className="hover:bg-[#4D4352] hover:text-[#FFF5FF] lg:text-xl transition-all w-full h-full flex flex-col justify-center items-center "
         to={"/languages"}
       >
         <FontAwesomeIcon icon={faLanguage} />
@@ -111,13 +111,13 @@ export const NavBar = ({ language }) => {
             isHovered
               ? "opacity-100 translate-x-0"
               : "opacity-0 -translate-x-full "
-          } transition-all whitespace-nowrap text-center w-full`}
+          } transition-all whitespace-nowrap text-center w-full hidden lg:block`}
         >
           {language.languages}
         </span>
       </Link>
       <Link
-        className="hover:bg-[#4D4352] hover:text-[#FFF5FF] text-xl transition-all w-full h-full flex flex-col justify-center items-center "
+        className="hover:bg-[#4D4352] hover:text-[#FFF5FF] lg:text-xl transition-all w-full h-full flex flex-col justify-center items-center "
         to={"/contact"}
       >
         <FontAwesomeIcon icon={faEnvelope} />
@@ -126,7 +126,7 @@ export const NavBar = ({ language }) => {
             isHovered
               ? "opacity-100 translate-x-0"
               : "opacity-0 -translate-x-full "
-          } transition-all whitespace-nowrap text-center w-full`}
+          } transition-all whitespace-nowrap text-center w-full hidden lg:block`}
         >
           {language.contact}
         </span>

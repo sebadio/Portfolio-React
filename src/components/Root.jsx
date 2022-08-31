@@ -2,15 +2,15 @@ import React from "react";
 
 export const Root = ({ language }) => {
   return (
-    <div className="flex relative w-full justify-center">
-      <div className="relative max-h-full w-max rounded-3xl lg:m-8 overflow-hidden">
+    <div className="flex relative w-full h-[80vh] m-auto md:h-full justify-center">
+      <div className="relative max-h-full h-min sm:h-auto w-max rounded-3xl my-auto md:my-8 overflow-hidden">
         <img
           id="photo"
           className="max-h-full"
           src="https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/FotoCV.jpg"
         />
 
-        <div className="absolute bottom-0 h-1/3 w-full flex flex-col justify-center items-center gap-12 backdrop-blur-xl">
+        <div className="absolute bottom-0 h-1/3 w-full flex flex-col justify-center items-center gap-4 md:gap-12 backdrop-blur-xl">
           <div className="flex flex-col text-center">
             <h1 className="font-bold text-3xl">{language.title}</h1>
             <p className="font-semibold text-lg">{language.description}</p>
@@ -22,8 +22,8 @@ export const Root = ({ language }) => {
             rel="noopener noreferrer"
           >
             {language.description === "Desarrollador Web Junior"
-              ? "Descargar"
-              : "Download"}{" "}
+              ? "Descargar "
+              : "Download "}
             CV
           </a>
         </div>

@@ -1,7 +1,6 @@
 import React from "react";
 
 export const SwitchLanguage = ({ language, changeLanguage }) => {
-  console.log(language);
   return (
     <button
       onClick={changeLanguage}
