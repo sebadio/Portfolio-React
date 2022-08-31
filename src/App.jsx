@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { Suspense } from "react";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
@@ -15,63 +15,68 @@ import {
   SwitchLanguage,
 } from "./components";
 
-import { fetchLanguages } from "./helper/fetchLanguages";
-import { useEffect } from "react";
+import i18n from "i18next";
+import { initReactI18next } from "react-i18next";
+import LanguageDetector from "i18next-browser-languagedetector";
+import HttpApi from "i18next-http-backend";
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
+
+i18n
+  .use(initReactI18next)
+  .use(LanguageDetector)
+  .use(HttpApi)
+  .init({
+    fallbackLng: "en",
+    backend: {
+      loadPath:
+        "https://sebadio.github.io/Portfolio-React/assets/locales/{{lng}}/translation.json",
+    },
+    detection: {
+      order: ["cookie", "localStorage", "htmlTag", "path", "subdomain"],
+      caches: ["cookie, localStorage"],
+    },
+  });
 
 const App = () => {
-  const [isLoading, setIsLoading] = useState(true);
-
-  let es;
-  let en;
-
-  useEffect(() => {
-    const respuesta = fetchLanguages();
-
-    es = respuesta.es;
-    en = respuesta.en;
-
-    setIsLoading(false);
-  }, []);
-
-  const [selectedLanguage, setSelectedLanguage] = useState();
+  const { t } = useTranslation();
 
   const changeLanguage = () => {
-    const previousLanguage = selectedLanguage;
-
-    localStorage.setItem(
-      "selectedLanguage",
-      previousLanguage === "es" ? "en" : "es"
+    i18next.changeLanguage(
+      localStorage.getItem("i18nextLng") === "es" ? "en" : "es"
     );
-
-    setSelectedLanguage(selectedLanguage === es ? en : es);
+    localStorage.setItem(
+      "i18nextLng",
+      localStorage.getItem("i18nextLng") === "es" ? "en" : "es"
+    );
   };
 
   return (
     <div className="flex w-full h-screen bg-[#252326] text-[#C4C1C5]">
-      {isLoading ? (
-        <div className="loading w-4 h-4 border-8 p-4 m-4 rounded-full border-t-slate-900 animate-spin"></div>
-      ) : (
-        <>
-          <BrowserRouter>
-            <NavBar language={selectedLanguage && selectedLanguage} />
+      <Suspense
+        fallback={
+          <div className="loading w-4 h-4 border-8 p-4 m-4 rounded-full border-t-slate-900 animate-spin"></div>
+        }
+      >
+        <BrowserRouter>
+          <NavBar language={t("navbar", { returnObjects: true })} />
 
-            <Routes>
-              <Route path="/" element={<Root />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/skills" element={<Skills />} />
-              <Route path="/courses" element={<Courses />} />
-              <Route path="/proyects" element={<Proyects />} />
-              <Route path="/languages" element={<Languages />} />
-              <Route path="/contact" element={<Contact />} />
-            </Routes>
-          </BrowserRouter>
+          <Routes>
+            <Route
+              path="/"
+              element={<Root language={t("root", { returnObjects: true })} />}
+            />
+            <Route path="/about" element={<About />} />
+            <Route path="/skills" element={<Skills />} />
+            <Route path="/courses" element={<Courses />} />
+            <Route path="/proyects" element={<Proyects />} />
+            <Route path="/languages" element={<Languages />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </BrowserRouter>
 
-          <SwitchLanguage
-            language={selectedLanguage && selectedLanguage}
-            changeLanguage={changeLanguage}
-          />
-        </>
-      )}
+        <SwitchLanguage language={t("type")} changeLanguage={changeLanguage} />
+      </Suspense>
     </div>
   );
 };

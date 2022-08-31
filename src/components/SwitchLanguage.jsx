@@ -1,6 +1,7 @@
 import React from "react";
 
 export const SwitchLanguage = ({ language, changeLanguage }) => {
+  console.log(language);
   return (
     <button
       onClick={changeLanguage}
@@ -9,11 +10,11 @@ export const SwitchLanguage = ({ language, changeLanguage }) => {
       <img
         className="rounded-full transition-all"
         src={
-          language && language.type === "es"
+          language === "es"
             ? "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/src/media/spanish64.png"
             : "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/src/media/english64.png"
         }
-        alt={language.type === "es" ? "Cambiar Lenguage" : "Change Language"}
+        alt={language === "es" ? "Cambiar Lenguage" : "Change Language"}
       />
     </button>
   );
