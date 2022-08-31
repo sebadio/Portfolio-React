@@ -20,6 +20,36 @@
   "skills": {
     "title": "Skills",
     "description": "As I've mentioned before, my main skills fall into the front-end side, and so these are the tools that I work with",
+    "skillsArray": [
+      {
+        "title": "Bootstrap",
+        "imgLink": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/skills/Bootstrap.png"
+      },
+      {
+        "title": "HTML 5",
+        "imgLink": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/skills/HTML5.png"
+      },
+      {
+        "title": "JavaScript",
+        "imgLink": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/skills/JScript.png"
+      },
+      {
+        "title": "CSS",
+        "imgLink": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/skills/css.png"
+      },
+      {
+        "title": "Git",
+        "imgLink": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/skills/git.png"
+      },
+      {
+        "title": "React",
+        "imgLink": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/skills/react.png"
+      },
+      {
+        "title": "Tailwind",
+        "imgLink": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/skills/tailwind.png"
+      }
+    ],
     "softSkillsDescription": "In a work environment is not only what technical knowledge you have that's important, so here are my strengths as an individual",
     "softSkills": [
       "Calm",

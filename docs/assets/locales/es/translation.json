@@ -19,6 +19,36 @@
   },
   "skills": {
     "title": "Habilidades",
+    "skillsArray": [
+      {
+        "title": "Bootstrap",
+        "imgLink": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/skills/Bootstrap.png"
+      },
+      {
+        "title": "HTML 5",
+        "imgLink": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/skills/HTML5.png"
+      },
+      {
+        "title": "JavaScript",
+        "imgLink": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/skills/JScript.png"
+      },
+      {
+        "title": "CSS",
+        "imgLink": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/skills/css.png"
+      },
+      {
+        "title": "Git",
+        "imgLink": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/skills/git.png"
+      },
+      {
+        "title": "React",
+        "imgLink": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/skills/react.png"
+      },
+      {
+        "title": "Tailwind",
+        "imgLink": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/skills/tailwind.png"
+      }
+    ],
     "description": "Como he mencionado antes, mis principales habilidades caen en el lado del front-end, y por lo tanto estas son las herramientas con las que trabajo.",
     "softSkillsDescription": "En un entorno de trabajo no sólo es importante el conocimiento técnico que tengas, así que aquí están mis puntos fuertes como individuo",
     "softSkills": [
