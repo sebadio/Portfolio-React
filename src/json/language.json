@@ -1,5 +1,9 @@
 {
   "es": {
+    "root": {
+      "title": "Sebastián Díaz Dopazo",
+      "description": "Desarrollador Web Junior"
+    },
     "type": "es",
     "navbar": {
       "home": "Inicio",
@@ -107,6 +111,10 @@
     }
   },
   "en": {
+    "root": {
+      "title": "Sebastián Díaz Dopazo",
+      "description": "Junior Web Developer"
+    },
     "type": "en",
     "navbar": {
       "home": "Home",

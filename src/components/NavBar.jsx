@@ -16,12 +16,6 @@ import { useEffect } from "react";
 
 export const NavBar = ({ language }) => {
   const [isHovered, setIsHovered] = useState(false);
-  const [selectedLanguage, setSelectedLanguage] = useState(language);
-
-  useEffect(() => {
-    setSelectedLanguage(language);
-    console.log(language);
-  }, [language]);
 
   return (
     <nav
@@ -31,7 +25,7 @@ export const NavBar = ({ language }) => {
       onMouseLeave={() => {
         setIsHovered(false);
       }}
-      className="w-[5rem] transition-all hover:w-1/12 h-screen flex flex-col justify-evenly text-center border-r-2 shadow-2xl shadow-black border-[#FFF5FF]"
+      className="w-[6rem] transition-all hover:w-2/12 h-screen flex flex-col justify-evenly text-center border-r-2 shadow-2xl shadow-black border-[#FFF5FF]"
     >
       <Link
         className="hover:bg-[#4D4352] hover:text-[#FFF5FF] text-xl transition-all w-full h-full flex flex-col justify-center items-center "
@@ -45,7 +39,7 @@ export const NavBar = ({ language }) => {
               : "opacity-0 -translate-x-full "
           } transition-all whitespace-nowrap text-center w-full`}
         >
-          {selectedLanguage && selectedLanguage.navbar.home}
+          {language && language.navbar.home}
         </span>
       </Link>
       <Link
@@ -60,7 +54,7 @@ export const NavBar = ({ language }) => {
               : "opacity-0 -translate-x-full "
           } transition-all whitespace-nowrap text-center w-full`}
         >
-          {selectedLanguage && selectedLanguage.navbar.about}
+          {language && language.navbar.about}
         </span>
       </Link>
       <Link
@@ -75,7 +69,7 @@ export const NavBar = ({ language }) => {
               : "opacity-0 -translate-x-full "
           } transition-all whitespace-nowrap text-center w-full`}
         >
-          {selectedLanguage && selectedLanguage.navbar.skills}
+          {language && language.navbar.skills}
         </span>
       </Link>
       <Link
@@ -90,7 +84,7 @@ export const NavBar = ({ language }) => {
               : "opacity-0 -translate-x-full "
           } transition-all whitespace-nowrap text-center w-full`}
         >
-          {selectedLanguage && selectedLanguage.navbar.courses}
+          {language && language.navbar.courses}
         </span>
       </Link>
       <Link
@@ -105,7 +99,7 @@ export const NavBar = ({ language }) => {
               : "opacity-0 -translate-x-full "
           } transition-all whitespace-nowrap text-center w-full`}
         >
-          {selectedLanguage && selectedLanguage.navbar.projects}
+          {language && language.navbar.projects}
         </span>
       </Link>
       <Link
@@ -120,7 +114,7 @@ export const NavBar = ({ language }) => {
               : "opacity-0 -translate-x-full "
           } transition-all whitespace-nowrap text-center w-full`}
         >
-          {selectedLanguage && selectedLanguage.navbar.languages}
+          {language && language.navbar.languages}
         </span>
       </Link>
       <Link
@@ -135,7 +129,7 @@ export const NavBar = ({ language }) => {
               : "opacity-0 -translate-x-full "
           } transition-all whitespace-nowrap text-center w-full`}
         >
-          {selectedLanguage && selectedLanguage.navbar.contact}
+          {language && language.navbar.contact}
         </span>
       </Link>
     </nav>

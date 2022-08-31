@@ -18,8 +18,6 @@ import {
 import { fetchLanguages } from "./helper/fetchLanguages";
 const { es, en } = await fetchLanguages();
 
-console.log({ es, en });
-
 function App() {
   const [selectedLanguage, setSelectedLanguage] = useState(es);
 
