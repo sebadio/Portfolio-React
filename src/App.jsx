@@ -16,10 +16,24 @@ import {
 } from "./components";
 
 import { fetchLanguages } from "./helper/fetchLanguages";
-const { es, en } = await fetchLanguages();
+import { useEffect } from "react";
 
-function App() {
-  const [selectedLanguage, setSelectedLanguage] = useState(es);
+const App = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  let es;
+  let en;
+
+  useEffect(() => {
+    const respuesta = fetchLanguages();
+
+    es = respuesta.es;
+    en = respuesta.en;
+
+    setIsLoading(false);
+  }, []);
+
+  const [selectedLanguage, setSelectedLanguage] = useState();
 
   const changeLanguage = () => {
     const previousLanguage = selectedLanguage;
@@ -34,26 +48,32 @@ function App() {
 
   return (
     <div className="flex w-full h-screen bg-[#252326] text-[#C4C1C5]">
-      <BrowserRouter>
-        <NavBar language={selectedLanguage && selectedLanguage} />
+      {isLoading ? (
+        <div className="loading w-4 h-4 border-8 p-4 m-4 rounded-full border-t-slate-900 animate-spin"></div>
+      ) : (
+        <>
+          <BrowserRouter>
+            <NavBar language={selectedLanguage && selectedLanguage} />
 
-        <Routes>
-          <Route path="/" element={<Root />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/courses" element={<Courses />} />
-          <Route path="/proyects" element={<Proyects />} />
-          <Route path="/languages" element={<Languages />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </BrowserRouter>
+            <Routes>
+              <Route path="/" element={<Root />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/skills" element={<Skills />} />
+              <Route path="/courses" element={<Courses />} />
+              <Route path="/proyects" element={<Proyects />} />
+              <Route path="/languages" element={<Languages />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+          </BrowserRouter>
 
-      <SwitchLanguage
-        language={selectedLanguage && selectedLanguage}
-        changeLanguage={changeLanguage}
-      />
+          <SwitchLanguage
+            language={selectedLanguage && selectedLanguage}
+            changeLanguage={changeLanguage}
+          />
+        </>
+      )}
     </div>
   );
-}
+};
 
 export default App;
