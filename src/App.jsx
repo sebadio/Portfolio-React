@@ -94,7 +94,12 @@ const App = () => {
                 <Languages language={t("languages", { returnObjects: true })} />
               }
             />
-            <Route path="/contact" element={<Contact />} />
+            <Route
+              path="/contact"
+              element={
+                <Contact language={t("contact", { returnObjects: true })} />
+              }
+            />
           </Routes>
         </BrowserRouter>
 
