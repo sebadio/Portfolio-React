@@ -152,6 +152,15 @@
     "github": "https://github.com/sebadio?tab=repositories",
     "mail": "mailto:sebastiandiazdopazo@gmail.com",
     "phone": "tel:+59892302595",
-    "whatsapp": "https://wa.me/message/VUGV3ZGKPTZTO1"
+    "whatsapp": "https://wa.me/message/VUGV3ZGKPTZTO1",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your Name",
+      "email": "Email",
+      "emailPlaceholder": "Your Email",
+      "description": "Description",
+      "descriptionPlaceholder": "Your message goes here",
+      "button": "Send"
+    }
   }
 }
