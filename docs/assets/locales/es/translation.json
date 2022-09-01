@@ -16,11 +16,11 @@
   "about": {
     "title": "Sobre mi",
     "description": "Hola, mi nombre es Sebastian. Soy un programador con conocimientos tanto del front-end como del back-end, aunque prefiero trabajar con el front-end. Me gusta trabajar en equipos para ganar experiencia y hacer crecer mis habilidades personales a un nivel mayor.",
-    "age": "Edad: 19",
-    "nationality": "Nacionalidad: Uruguayo",
-    "residence": "Residencia: Montevideo, Uruguay",
-    "email": "Email: sebastiandiazdopazo@gmail.com",
-    "phone": "Telefono: +598 92 302 595"
+    "age": "19",
+    "nationality": "Uruguayo",
+    "residence": "Uruguay",
+    "email": "sebastiandiazdopazo@gmail.com",
+    "phone": "+598 92 302 595"
   },
   "skills": {
     "title": "Habilidades",
