@@ -88,7 +88,12 @@ const App = () => {
                 <Proyects language={t("projects", { returnObjects: true })} />
               }
             />
-            <Route path="/languages" element={<Languages />} />
+            <Route
+              path="/languages"
+              element={
+                <Languages language={t("languages", { returnObjects: true })} />
+              }
+            />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </BrowserRouter>
