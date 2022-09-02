@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+*:focus {
+  outline: none;
+}
+
 ::-webkit-scrollbar {
   background-color: rgba(0, 0, 0, 0.3);
   width: 0.4rem;
@@ -10,4 +14,8 @@
 ::-webkit-scrollbar-thumb {
   background-color: black;
   border-radius: 5rem;
+}
+
+.formInput:not(:placeholder-shown) {
+  box-shadow: black !important;
 }
