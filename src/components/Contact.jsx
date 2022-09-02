@@ -26,7 +26,7 @@ export const Contact = ({ language }) => {
     <div className="w-full h-full flex flex-col pb-[10vh] lg:pb-0 lg:ml-[5vw] pt-4 items-center overflow-auto">
       <h1>{title}</h1>
 
-      <div className="flex w-full justify-around ml-[5vw] p-4">
+      <div className="flex w-full justify-around py-4">
         <InteractiveLink id={"linkedin"} link={linkedin} icono={faLinkedinIn} />
         <InteractiveLink id={"github"} link={github} icono={faGithub} />
         <InteractiveLink id={"mail"} link={mail} icono={faEnvelope} />
