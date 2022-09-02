@@ -1,4 +1,5 @@
 import React from "react";
+import { ProjectLink } from "./ProjectLink";
 
 export const Proyects = ({ language }) => {
   const { title, description, projectsArray } = language;
@@ -16,22 +17,8 @@ export const Proyects = ({ language }) => {
           >
             <h3>{title}</h3>
             <p>{description}</p>
-            <a
-              className="hover:text-[#496F69] transition-all"
-              href={linkToGit}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              GitHub
-            </a>
-            <a
-              className="hover:text-[#496F69] transition-all"
-              href={linkToPage}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Page
-            </a>
+            <ProjectLink id={`${title}Git`} link={linkToGit} type={"GitHub"} />
+            <ProjectLink id={`${title}Page`} link={linkToPage} type={"Page"} />
           </div>
         ))}
       </div>
