@@ -1,4 +1,13 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGithub,
+  faLinkedin,
+  faLinkedinIn,
+  faWhatsapp,
+} from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope, faG, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { InteractiveLink } from "./InteractiveLink";
 
 export const Contact = ({ language }) => {
   const { title, linkedin, github, mail, phone, whatsapp, form } = language;
@@ -17,21 +26,13 @@ export const Contact = ({ language }) => {
     <div className="w-full h-full flex flex-col pb-[10vh] lg:pb-0 lg:ml-[5vw] pt-4 items-center overflow-auto">
       <h1>{title}</h1>
 
-      <a href={linkedin} target="_blank" rel="noopener noreferrer">
-        Linkedin
-      </a>
-      <a href={github} target="_blank" rel="noopener noreferrer">
-        GitHub
-      </a>
-      <a href={mail} target="_blank" rel="noopener noreferrer">
-        Mail
-      </a>
-      <a href={whatsapp} target="_blank" rel="noopener noreferrer">
-        WhatsApp
-      </a>
-      <a href={phone} target="_blank" rel="noopener noreferrer">
-        Phone
-      </a>
+      <div className="flex w-full justify-around ml-[5vw] p-4">
+        <InteractiveLink id={"linkedin"} link={linkedin} icono={faLinkedinIn} />
+        <InteractiveLink id={"github"} link={github} icono={faGithub} />
+        <InteractiveLink id={"mail"} link={mail} icono={faEnvelope} />
+        <InteractiveLink id={"phone"} link={phone} icono={faPhone} />
+        <InteractiveLink id={"whatsapp"} link={whatsapp} icono={faWhatsapp} />
+      </div>
 
       <div className="flex flex-col border-white border-2 p-4">
         <form className="flex flex-col gap-4" action="">
