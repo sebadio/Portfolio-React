@@ -9,18 +9,9 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import { getOffset } from "../helper/getOffset";
 
 export const InteractiveLink = ({ id, link, icono }) => {
-  const getOffset = (e) => {
-    const top = e.target.offsetTop;
-    const left = e.target.offsetLeft;
-
-    return {
-      left,
-      top,
-    };
-  };
-
   const handleMouseMove = (e) => {
     if (!window.matchMedia("(any-hover: none)").matches) {
       const { left, top } = getOffset(e);
