@@ -1,7 +1,7 @@
 import React from "react";
 import { ProjectLink } from "./ProjectLink";
 
-export const Proyects = ({ language }) => {
+export const Proyects = ({ language, type }) => {
   const { title, description, projectsArray } = language;
 
   return (
@@ -17,8 +17,18 @@ export const Proyects = ({ language }) => {
           >
             <h3>{title}</h3>
             <p>{description}</p>
-            <ProjectLink id={`${title}Git`} link={linkToGit} type={"GitHub"} />
-            <ProjectLink id={`${title}Page`} link={linkToPage} type={"Page"} />
+            <ProjectLink
+              language={type}
+              id={`${title}Git`}
+              link={linkToGit}
+              type={"GitHub"}
+            />
+            <ProjectLink
+              language={type}
+              id={`${title}Page`}
+              link={linkToPage}
+              type={"Page"}
+            />
           </div>
         ))}
       </div>
