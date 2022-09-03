@@ -94,7 +94,7 @@
   },
   "projects": {
     "title": "Projects",
-    "description": "",
+    "description": "These are some of the projects I have worked on by myself.",
     "projectsArray": [
       {
         "title": "PokeWordle",

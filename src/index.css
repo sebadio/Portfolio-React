@@ -19,3 +19,7 @@
 .formInput:not(:placeholder-shown) {
   box-shadow: black !important;
 }
+
+.perspective {
+  transform: perspective(1000px);
+}
