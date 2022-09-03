@@ -39,8 +39,8 @@ export const ProjectLink = ({ id, type, link, language }) => {
       const mouseX = e.clientX - centerX;
       const mouseY = e.clientY - centerY;
 
-      const rotateX = (-1 * (15 * mouseY)) / (height / 2);
-      const rotateY = (15 * mouseX) / (width / 2);
+      const rotateX = ((-1 * (15 * mouseY)) / (height / 2)).toFixed(2);
+      const rotateY = ((15 * mouseX) / (width / 2)).toFixed(2);
 
       i.style.background = `radial-gradient(circle 40px at ${x}px ${y}px, #496F6999, rgba(0,0,0,0.3))`;
       i.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.1, 1.1, 1.1)`;
