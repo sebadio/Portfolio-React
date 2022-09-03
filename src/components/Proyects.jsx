@@ -25,20 +25,27 @@ export const Proyects = ({ language, type }) => {
       linkToCourse,
       type,
     });
+
     setShowModal(true);
+
     setTimeout(() => {
       const modal = document.getElementById("modal");
-      modal.classList.remove("animate-hideModal");
-      modal.classList.add("animate-showModal");
-      modal.classList.remove("-translate-y-full");
+      const modalBg = document.getElementById("modalBg");
+
+      modalBg.style.transition = `0.75s ease`;
+      modalBg.style.opacity = `1`;
+
+      modal.style.transition = `0.75s ease`;
+      modal.style.transform = `translateY(0px)`;
     }, 50);
   };
 
   const handleCloseModal = () => {
     const modal = document.getElementById("modal");
+    const modalBg = document.getElementById("modalBg");
 
-    modal.classList.remove("animate-showModal");
-    modal.classList.add("animate-hideModal");
+    modal.style.transform = `translateY(-100vh)`;
+    modalBg.style.opacity = `0`;
 
     setTimeout(() => {
       setShowModal(false);

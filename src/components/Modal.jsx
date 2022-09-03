@@ -16,10 +16,13 @@ export const Modal = ({ props, handleCloseModal }) => {
 
   return (
     <div
-      id="modal"
-      className="fixed z-30 top-0 left-0 w-full h-screen bg-[rgba(0,0,0,0.6)] flex justify-center items-center transition-all -translate-y-full"
+      id="modalBg"
+      className="fixed z-30 top-0 left-0 w-full h-screen bg-[rgba(0,0,0,0.6)] flex justify-center items-center"
     >
-      <div className="flex flex-col z-50 bg-[#252326] w-[95vw] lg:w-1/2 h-auto p-4 rounded-lg shadow-lg shadow-[rgba(0,0,0,0.8)]">
+      <div
+        id="modal"
+        className="flex flex-col z-50 bg-[#252326] w-[95vw] lg:w-1/2 h-auto p-4 rounded-lg shadow-lg shadow-[rgba(0,0,0,0.8)] -translate-y-[100vh]"
+      >
         <div className="flex justify-between">
           <h1 className="text-[#B2A7B8] font-bold text-2xl select-none">
             {title}
