@@ -4,7 +4,15 @@ import React from "react";
 import { ProjectLink } from "./ProjectLink";
 
 export const Modal = ({ props, handleCloseModal }) => {
-  const { title, description, image, linkToGit, linkToPage, type } = props;
+  const {
+    title,
+    description,
+    image,
+    linkToGit,
+    linkToPage,
+    linkToCourse,
+    type,
+  } = props;
 
   return (
     <div
@@ -13,11 +21,11 @@ export const Modal = ({ props, handleCloseModal }) => {
     >
       <div className="flex flex-col z-50 bg-[#252326] w-[95vw] lg:w-1/2 h-auto p-4 rounded-lg shadow-lg shadow-[rgba(0,0,0,0.8)]">
         <div className="flex justify-between">
-          <h1 className="text-[#496F69] font-bold text-xl select-none">
+          <h1 className="text-[#B2A7B8] font-bold text-2xl select-none">
             {title}
           </h1>
           <FontAwesomeIcon
-            className="text-3xl cursor-pointer"
+            className="text-[#B2A7B8] text-3xl cursor-pointer hover:text-[#496F69] transition-all"
             onClick={handleCloseModal}
             icon={faXmark}
           />
@@ -37,18 +45,30 @@ export const Modal = ({ props, handleCloseModal }) => {
         <hr className="my-4 h-[1px] border-none bg-[#B2A7B8]" />
 
         <div className="h-20 flex flex-wrap justify-center items-center lg:gap-8">
-          <ProjectLink
-            id={`Git`}
-            language={type}
-            type={"GitHub"}
-            link={linkToGit}
-          />
-          <ProjectLink
-            id={`Page`}
-            language={type}
-            type={"Page"}
-            link={linkToPage}
-          />
+          {linkToGit && (
+            <ProjectLink
+              id={`Git`}
+              language={type}
+              type={"GitHub"}
+              link={linkToGit}
+            />
+          )}
+          {linkToPage && (
+            <ProjectLink
+              id={`Page`}
+              language={type}
+              type={type === "es" ? "Pagina" : "Page"}
+              link={linkToPage}
+            />
+          )}
+          {linkToCourse && (
+            <ProjectLink
+              id={`Page`}
+              language={type}
+              type={type === "es" ? "Curso" : "Course"}
+              link={linkToCourse}
+            />
+          )}
         </div>
       </div>
     </div>

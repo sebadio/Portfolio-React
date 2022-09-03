@@ -10,11 +10,21 @@ export const Proyects = ({ language, type }) => {
   const handleShowModal = (
     title,
     description,
-    linkToPage,
+    image,
     linkToGit,
-    image
+    linkToPage,
+    linkToCourse,
+    type
   ) => {
-    setModalProps({ title, description, linkToPage, linkToGit, image });
+    setModalProps({
+      title,
+      description,
+      image,
+      linkToGit,
+      linkToPage,
+      linkToCourse,
+      type,
+    });
     setShowModal(true);
     setTimeout(() => {
       const modal = document.getElementById("modal");
@@ -57,12 +67,14 @@ export const Proyects = ({ language, type }) => {
                 handleShowModal(
                   title,
                   description,
-                  linkToPage,
+                  image,
                   linkToGit,
-                  image
+                  linkToPage,
+                  undefined,
+                  type
                 );
               }}
-              className="flex flex-col justify-center items-center mt-8 w-1/4 border-[1px] border-[rgba(255,255,255,0.3)] cursor-pointer"
+              className="flex flex-col justify-center items-center mt-8 w-full lg:w-1/3 border-[1.5px] border-[rgba(255,255,255,0.3)] hover:border-[#496f6960] transition-all cursor-pointer"
               key={title}
             >
               <img className="w-full h-full aspect-video" src={image} />

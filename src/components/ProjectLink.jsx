@@ -59,7 +59,7 @@ export const ProjectLink = ({ id, type, link, language }) => {
       onMouseLeave={(e) => {
         handleMouseLeave(e);
       }}
-      className="py-2 px-4 backdrop-blur-3xl font-bold bg-[rgba(0,0,0,0.3)] border-[#496F69] shadow-md shadow-[#496F6933] border-[1px] m-1 transition-all perspective"
+      className="py-2 px-4 backdrop-blur-3xl font-bold bg-[rgba(0,0,0,0.3)] border-[#496f6962] shadow-md shadow-[#496F6933] border-[1px] m-1 transition-all perspective"
       href={link}
       target="_blank"
       rel="noopener noreferrer"
