@@ -119,7 +119,7 @@
       },
       {
         "title": "Pomodoro App with Electron",
-        "description": "Pomodoro is a technique of concentrating that I often opt for studying. Then I decided to make my own Pomodoro desktop app with Electron.",
+        "description": "Pomodoro is a technique of concentrating that I often opt when studying. Then I decided to make my own Pomodoro desktop app with Electron.",
         "linkToPage": "https://github.com/sebadio/PomodoroApp",
         "linkToGit": "https://github.com/sebadio/PomodoroApp/releases/tag/PomodoroV1.2",
         "image": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/projects/PomodoroApp.png"
