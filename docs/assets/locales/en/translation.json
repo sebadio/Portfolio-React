@@ -133,7 +133,7 @@
       },
       {
         "title": "JAP E-Commerce",
-        "description": "JAP ('Jovenes a Programar') is an Uruguayan program that teaches the young people of the country, this was a project-based learing experience in wich we had to figure out how to make certain aspects of the webpage.",
+        "description": "JAP ('Jovenes a Programar') is an Uruguayan program that teaches the young people of the country to code, this was a project-based learing experience in wich we had to figure out how to make certain aspects of the webpage.",
         "linkToPage": "https://sebadio.github.io/JAP-Workspace/",
         "linkToGit": "https://github.com/sebadio/JAP-Workspace",
         "image": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/projects/JAP-Workspace.png"
