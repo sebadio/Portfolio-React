@@ -30,11 +30,11 @@ export const ProjectLink = ({ id, type, link, language }) => {
       const { left, top } = getOffset(e);
       const { width, height } = i.getBoundingClientRect();
 
-      const x = e.pageX - left;
-      const y = e.pageY - top;
+      const x = e.pageX - (left + i.offsetParent.offsetLeft);
+      const y = e.pageY - (top + i.offsetParent.offsetTop);
 
-      const centerX = left + width / 2;
-      const centerY = top + height / 2;
+      const centerX = left + i.offsetParent.offsetLeft + width / 2;
+      const centerY = top + i.offsetParent.offsetTop + height / 2;
 
       const mouseX = e.clientX - centerX;
       const mouseY = e.clientY - centerY;

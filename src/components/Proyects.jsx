@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { AnimatedTitle } from "./AnimatedTitle";
 import { Modal } from "./Modal";
 
 export const Proyects = ({ language, type }) => {
@@ -54,7 +55,9 @@ export const Proyects = ({ language, type }) => {
 
   return (
     <div className="w-full h-full flex flex-col pb-[10vh] lg:pb-0 lg:ml-[5vw] pt-4 items-center overflow-auto">
-      <h1 className="text-[#496F69] font-extrabold text-4xl">{title}</h1>
+      <h1 className="text-[#496F69] flex justify-center items-center font-extrabold text-4xl">
+        {<AnimatedTitle title={title} />}
+      </h1>
       <p className="mt-4">{description}</p>
 
       {showModal && (
@@ -85,11 +88,14 @@ export const Proyects = ({ language, type }) => {
                           mt-8 w-full lg:w-1/3 
                           border-[1.5px] border-[rgba(255,255,255,0.3)] hover:border-[#496f6960]
                           transition-all cursor-pointer overflow-hidden
-                          after:flex after:justify-center after:items-center after:content-[attr(after)] after:bottom-0 left-0 after:w-full after:h-1/2 after:absolute after:text-white after:font-bold after:text-center after:text-2xl ${
-                            !window.matchMedia("(any-hover: none)").matches &&
-                            "after:translate-y-full"
-                          } after:transition-all
-                          after:bg-[rgba(0,0,0,0.75)] hover:after:translate-y-0`}
+                          after:flex after:justify-center after:items-center after:content-[attr(after)]
+                          after:bottom-0 left-0 after:w-full after:h-1/3 after:absolute after:text-white
+                          after:font-bold after:text-center after:text-lg lg:after:text-2xl
+                           ${
+                             !window.matchMedia("(any-hover: none)").matches &&
+                             "after:translate-y-full"
+                           } 
+                           after:transition-all after:bg-[rgba(0,0,0,0.75)] hover:after:translate-y-0`}
               key={title}
               after={title}
             >

@@ -1,4 +1,5 @@
 import React from "react";
+import { AnimatedTitle } from "./AnimatedTitle";
 
 export const Skills = ({ language }) => {
   const { title, description, skillsArray, softSkillsDescription, softSkills } =
@@ -6,7 +7,9 @@ export const Skills = ({ language }) => {
 
   return (
     <div className="w-full h-full flex flex-col pb-[10vh] lg:pb-0 lg:ml-[5vw] pt-4 items-center overflow-auto">
-      <h1 className="text-[#496F69] font-extrabold text-4xl">{title}</h1>
+      <h1 className="text-[#496F69] flex justify-center items-center font-extrabold text-4xl">
+        {<AnimatedTitle title={title} />}
+      </h1>
 
       <div className="flex flex-col h-[40vh] lg:flex-row justify-center items-center">
         <p className="p-4">{description}</p>

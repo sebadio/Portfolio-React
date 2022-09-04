@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { AnimatedTitle } from "./AnimatedTitle";
 import { Modal } from "./Modal";
 
 export const Courses = ({ language, type }) => {
@@ -51,9 +52,14 @@ export const Courses = ({ language, type }) => {
   };
 
   return (
-    <div className="w-full h-full flex flex-col pb-[10vh] lg:pb-0 lg:ml-[5vw] pt-4 items-center overflow-auto">
-      <h1>{title}</h1>
-      <p>{description}</p>
+    <div className="w-full flex flex-col pb-[10vh] lg:pb-0 lg:ml-[5vw] pt-4 justify-center items-center overflow-auto">
+      <h1
+        id="titulo"
+        className="text-[#496F69] flex justify-center items-center font-extrabold text-4xl"
+      >
+        {<AnimatedTitle title={title} />}
+      </h1>
+      <p className="mt-4">{description}</p>
 
       {showModal && (
         <Modal
@@ -64,7 +70,7 @@ export const Courses = ({ language, type }) => {
         />
       )}
 
-      <div className="flex flex-wrap justify-around items-center h-full p-2">
+      <div className="flex flex-wrap justify-around items-center p-2 mt-12">
         {coursesArray.map(({ title, description, link, image }) => (
           <div
             onClick={() => {
@@ -78,8 +84,14 @@ export const Courses = ({ language, type }) => {
                 type
               );
             }}
-            className="w-full lg:w-1/4 border-[#B2A7B8] border-[1px] shadow-md shadow-black hover:scale-125 transition-all"
+            className={`w-full lg:w-1/4 relative overflow-hidden border-[#B2A7B8] border-[1px] hover:border-[#496f6960] shadow-md shadow-black transition-all
+            after:flex after:justify-center after:items-center after:content-[attr(after)] after:bottom-0 left-0 after:w-full after:h-1/3 after:absolute after:text-white after:font-bold after:text-center after:text-lg lg:after:text-2xl ${
+              !window.matchMedia("(any-hover: none)").matches &&
+              "after:translate-y-full"
+            } after:transition-all
+            after:bg-[rgba(0,0,0,0.75)] hover:cursor-pointer hover:after:translate-y-0`}
             key={title}
+            after={title}
           >
             <img src={image} />
           </div>

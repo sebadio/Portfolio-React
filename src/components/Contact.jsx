@@ -8,6 +8,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faG, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { InteractiveLink } from "./InteractiveLink";
+import { AnimatedTitle } from "./AnimatedTitle";
 
 export const Contact = ({ language }) => {
   const { title, linkedin, github, mail, phone, whatsapp, form } = language;
@@ -24,7 +25,9 @@ export const Contact = ({ language }) => {
 
   return (
     <div className="w-full h-full flex flex-col pb-[10vh] lg:pb-0 lg:ml-[5vw] pt-4 items-center overflow-auto">
-      <h1>{title}</h1>
+      <h1 className="text-[#496F69] flex justify-center items-center font-extrabold text-4xl">
+        {<AnimatedTitle title={title} />}
+      </h1>
 
       <div className="flex w-full justify-around py-4">
         <InteractiveLink id={"linkedin"} link={linkedin} icono={faLinkedinIn} />
