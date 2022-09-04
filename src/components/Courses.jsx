@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { AnimatedTitle } from "./AnimatedTitle";
+import { InteractiveDiv } from "./InteractiveDiv";
 import { Modal } from "./Modal";
 
 export const Courses = ({ language, type }) => {
@@ -70,10 +71,10 @@ export const Courses = ({ language, type }) => {
         />
       )}
 
-      <div className="flex flex-wrap justify-around items-center p-2 mt-12">
+      <div className="flex flex-wrap justify-around items-center p-2 mt-12 gap-3">
         {coursesArray.map(({ title, description, link, image }) => (
-          <div
-            onClick={() => {
+          <InteractiveDiv
+            handleShowModal={() => {
               handleShowModal(
                 title,
                 description,
@@ -84,17 +85,11 @@ export const Courses = ({ language, type }) => {
                 type
               );
             }}
-            className={`w-full lg:w-1/4 relative overflow-hidden border-[#B2A7B8] border-[1px] hover:border-[#496f6960] shadow-md shadow-black transition-all
-            after:flex after:justify-center after:items-center after:content-[attr(after)] after:bottom-0 left-0 after:w-full after:h-1/3 after:absolute after:text-white after:font-bold after:text-center after:text-lg lg:after:text-2xl ${
-              !window.matchMedia("(any-hover: none)").matches &&
-              "after:translate-y-full"
-            } after:transition-all
-            after:bg-[rgba(0,0,0,0.75)] hover:cursor-pointer hover:after:translate-y-0`}
+            image={image}
+            title={title}
+            type="courses"
             key={title}
-            after={title}
-          >
-            <img src={image} />
-          </div>
+          />
         ))}
       </div>
     </div>

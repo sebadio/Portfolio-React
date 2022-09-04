@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { AnimatedTitle } from "./AnimatedTitle";
+import { InteractiveDiv } from "./InteractiveDiv";
 import { Modal } from "./Modal";
 
 export const Proyects = ({ language, type }) => {
@@ -72,8 +73,8 @@ export const Proyects = ({ language, type }) => {
       <div className="flex flex-wrap gap-2 justify-center items-center p-4">
         {projectsArray.map(
           ({ title, description, linkToPage, linkToGit, image }) => (
-            <div
-              onClick={() => {
+            <InteractiveDiv
+              handleShowModal={() => {
                 handleShowModal(
                   title,
                   description,
@@ -84,23 +85,11 @@ export const Proyects = ({ language, type }) => {
                   type
                 );
               }}
-              className={`flex flex-col justify-center items-center relative
-                          mt-8 w-full lg:w-1/3 
-                          border-[1.5px] border-[rgba(255,255,255,0.3)] hover:border-[#496f6960]
-                          transition-all cursor-pointer overflow-hidden
-                          after:flex after:justify-center after:items-center after:content-[attr(after)]
-                          after:bottom-0 left-0 after:w-full after:h-1/3 after:absolute after:text-white
-                          after:font-bold after:text-center after:text-lg lg:after:text-2xl
-                           ${
-                             !window.matchMedia("(any-hover: none)").matches &&
-                             "after:translate-y-full"
-                           } 
-                           after:transition-all after:bg-[rgba(0,0,0,0.75)] hover:after:translate-y-0`}
+              type="projects"
+              title={title}
               key={title}
-              after={title}
-            >
-              <img className="w-full h-full aspect-video" src={image} />
-            </div>
+              image={image}
+            />
           )
         )}
       </div>
