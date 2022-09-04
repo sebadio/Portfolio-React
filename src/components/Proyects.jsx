@@ -16,7 +16,8 @@ export const Proyects = ({ language, type }) => {
     linkToGit,
     linkToPage,
     linkToCourse,
-    type
+    type,
+    disabled
   ) => {
     setModalProps({
       title,
@@ -26,6 +27,7 @@ export const Proyects = ({ language, type }) => {
       linkToPage,
       linkToCourse,
       type,
+      disabled,
     });
 
     setShowModal(true);
@@ -82,7 +84,11 @@ export const Proyects = ({ language, type }) => {
                   linkToGit,
                   linkToPage,
                   undefined,
-                  type
+                  type,
+                  title === "Pomodoro App with Electron" ||
+                    title === "Pomodoro App con Electron"
+                    ? true
+                    : false
                 );
               }}
               type="projects"

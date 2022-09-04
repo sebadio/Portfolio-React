@@ -1,7 +1,6 @@
 import React from "react";
 
 export const InteractiveDiv = ({ image, title, handleShowModal, type }) => {
-  console.log(type);
   return (
     <div
       onClick={handleShowModal}

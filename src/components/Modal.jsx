@@ -12,6 +12,7 @@ export const Modal = ({ props, handleCloseModal }) => {
     linkToPage,
     linkToCourse,
     type,
+    disabled,
   } = props;
 
   return (
@@ -56,12 +57,13 @@ export const Modal = ({ props, handleCloseModal }) => {
               link={linkToGit}
             />
           )}
-          {linkToPage && (
+          {linkToPage && !disabled && (
             <ProjectLink
               id={`Page`}
               language={type}
               type={type === "es" ? "Pagina" : "Page"}
               link={linkToPage}
+              disabled={disabled}
             />
           )}
           {linkToCourse && (
