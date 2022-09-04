@@ -74,7 +74,7 @@ export const Proyects = ({ language, type }) => {
 
       <div className="flex flex-wrap gap-2 justify-center items-center p-4">
         {projectsArray.map(
-          ({ title, description, linkToPage, linkToGit, image }) => (
+          ({ title, description, linkToPage, linkToGit, image, disabled }) => (
             <InteractiveDiv
               handleShowModal={() => {
                 handleShowModal(
@@ -85,10 +85,7 @@ export const Proyects = ({ language, type }) => {
                   linkToPage,
                   undefined,
                   type,
-                  title === "Pomodoro App with Electron" ||
-                    title === "Pomodoro App con Electron"
-                    ? true
-                    : false
+                  disabled
                 );
               }}
               type="projects"
