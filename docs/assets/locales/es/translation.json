@@ -101,42 +101,48 @@
         "description": "Wordle fue tendencia en juegos de 2022 durante un tiempo, y pensé en hacer un Wordle... ¡pero con Pokemon en su lugar!",
         "linkToPage": "https://sebadio.github.io/PokeWordle/",
         "linkToGit": "https://github.com/sebadio/PokeWordle",
-        "image": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/projects/PokeWordle.png"
+        "image": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/projects/PokeWordle.png",
+        "disabled": "false"
       },
       {
         "title": "Password Generador",
         "description": "Un generador de contraseñas seguras, si quieres una contraseña segura para que puedas asegurarte de que tu cuenta es lo más segura posible, puedes usar esta herramienta para ayudarte.",
         "linkToPage": "https://sebadio.github.io/GeneradorPassword/",
         "linkToGit": "https://github.com/sebadio/GeneradorPassword",
-        "image": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/projects/PasswordGen.png"
+        "image": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/projects/PasswordGen.png",
+        "disabled": "false"
       },
       {
         "title": "To Do App",
         "description": "Una 'To Do App' hecha con JS, CSS y HTML.",
         "linkToPage": "https://sebadio.github.io/ToDoApp/",
         "linkToGit": "https://github.com/sebadio/ToDoApp",
-        "image": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/projects/ToDoApp.png"
+        "image": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/projects/ToDoApp.png",
+        "disabled": "false"
       },
       {
         "title": "Pomodoro App con Electron",
         "description": "Pomodoro es una técnica de concentración por la que suelo optar para estudiar. Entonces decidí hacer mi propia aplicación Pomodoro de escritorio con Electron.",
         "linkToPage": "https://github.com/sebadio/PomodoroApp",
         "linkToGit": "https://github.com/sebadio/PomodoroApp/releases/tag/PomodoroV1.2",
-        "image": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/projects/PomodoroApp.png"
+        "image": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/projects/PomodoroApp.png",
+        "disabled": "true"
       },
       {
         "title": "Galeria React",
         "description": "Una simple galería hecha con React. Todas las imágenes no tienen derechos de autor y fueron puestas gratuitamente en Unsplash.",
         "linkToPage": "https://sebadio.github.io/React-Gallery/",
         "linkToGit": "https://github.com/sebadio/React-Gallery",
-        "image": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/projects/React-Gallery.png"
+        "image": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/projects/React-Gallery.png",
+        "disabled": "false"
       },
       {
         "title": "JAP E-Commerce",
         "description": "JAP ('Jovenes a Programar') es un programa uruguayo que enseña a los jóvenes del país a programar, esta fue una experiencia de aprendizaje basada en proyectos en la que tuvimos que averiguar cómo hacer ciertos aspectos de la página web.",
         "linkToPage": "https://sebadio.github.io/JAP-Workspace/",
         "linkToGit": "https://github.com/sebadio/JAP-Workspace",
-        "image": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/projects/JAP-Workspace.png"
+        "image": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/projects/JAP-Workspace.png",
+        "disabled": "false"
       }
     ]
   },
