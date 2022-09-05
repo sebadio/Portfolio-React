@@ -29,44 +29,55 @@ export const Contact = ({ language }) => {
         {<AnimatedTitle title={title} />}
       </h1>
 
-      <div className="flex w-full justify-around py-4">
-        <InteractiveLink id={"linkedin"} link={linkedin} icono={faLinkedinIn} />
-        <InteractiveLink id={"github"} link={github} icono={faGithub} />
-        <InteractiveLink id={"mail"} link={mail} icono={faEnvelope} />
-        <InteractiveLink id={"phone"} link={phone} icono={faPhone} />
-        <InteractiveLink id={"whatsapp"} link={whatsapp} icono={faWhatsapp} />
-      </div>
-
-      <div className="flex flex-col border-white border-2 p-4">
-        <form className="flex flex-col gap-4" action="">
-          <h3>{name} *</h3>
-          <input
-            required
-            type="text"
-            className="p-4 bg-transparent border-2 border-[#496F69] transition-all focus:shadow-lg focus:shadow-[rgba(255,255,255,0.1)] formInput"
-            placeholder={namePlaceholder}
+      <div className="flex flex-wrap flex-col lg:flex-row justify-evenly w-full">
+        <div className="flex flex-1 flex-wrap lg:flex-nowrap lg:flex-col w-full items-center justify-center py-4">
+          <InteractiveLink
+            id={"linkedin"}
+            link={linkedin}
+            icono={faLinkedinIn}
           />
+          <InteractiveLink id={"github"} link={github} icono={faGithub} />
+          <InteractiveLink id={"mail"} link={mail} icono={faEnvelope} />
+          <InteractiveLink id={"phone"} link={phone} icono={faPhone} />
+          <InteractiveLink id={"whatsapp"} link={whatsapp} icono={faWhatsapp} />
+        </div>
 
-          <h3>{email} *</h3>
-          <input
-            required
-            type="text"
-            className="p-4 bg-transparent border-2 border-[#496F69] transition-all focus:shadow-lg focus:shadow-[rgba(255,255,255,0.1)] formInput"
-            placeholder={emailPlaceholder}
-          />
+        <div className="flex flex-1 flex-col justify-center mt-4 p-4">
+          <form className="flex items-center flex-col gap-4" action="">
+            <h3 className="flex w-full lg:w-3/4">{name} *</h3>
+            <input
+              required
+              type="text"
+              className="p-4 w-full lg:w-3/4 bg-transparent border-2 border-[#496F69] transition-all focus:shadow-lg focus:shadow-[rgba(255,255,255,0.1)] formInput"
+              placeholder={namePlaceholder}
+            />
 
-          <h3>{description}</h3>
-          <textarea
-            className="resize-none p-4 bg-transparent border-2 border-[#496F69] transition-all focus:shadow-lg focus:shadow-[rgba(255,255,255,0.1)] formInput"
-            name="textarea"
-            id="textarea"
-            cols="30"
-            rows="10"
-            placeholder={descriptionPlaceholder}
-          ></textarea>
+            <h3 className="flex w-full lg:w-3/4">{email} *</h3>
+            <input
+              required
+              type="text"
+              className="p-4 w-full lg:w-3/4 bg-transparent border-2 border-[#496F69] transition-all focus:shadow-lg focus:shadow-[rgba(255,255,255,0.1)] formInput"
+              placeholder={emailPlaceholder}
+            />
 
-          <button type="submit">{button}</button>
-        </form>
+            <h3 className="flex w-full lg:w-3/4">{description}</h3>
+            <textarea
+              className="resize-none p-4 w-full lg:w-3/4 bg-transparent border-2 border-[#496F69] transition-all focus:shadow-lg focus:shadow-[rgba(255,255,255,0.1)] formInput"
+              name="textarea"
+              id="textarea"
+              cols="30"
+              rows="10"
+              placeholder={descriptionPlaceholder}
+            ></textarea>
+
+            <button
+              className="border-[#496F69] border-2 w-min px-6 py-2 font-bold transition-all hover:bg-stone-900"
+              type="submit"
+            >
+              {button}
+            </button>
+          </form>
+        </div>
       </div>
     </div>
   );
