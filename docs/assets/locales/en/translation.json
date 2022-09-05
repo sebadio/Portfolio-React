@@ -151,11 +151,13 @@
     "description": "Just like this page anticipates, I am bilingual!",
     "es": {
       "title": "Spanish",
-      "description": "I have native level of Spanish since I am from Uruguay and have lived a long time in Spain."
+      "description": "I have native level of Spanish since I am from Uruguay and have lived a long time in Spain.",
+      "image": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/locales/es/spanish256.png"
     },
     "en": {
       "title": "English",
-      "description": "I professional level knowledge of the English Language (C1)."
+      "description": "I professional level knowledge of the English Language (C1).",
+      "image": "https://github.com/sebadio/Portfolio-React/blob/main/docs/assets/locales/en/english256.png"
     }
   },
   "contact": {
