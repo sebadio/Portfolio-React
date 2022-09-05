@@ -151,11 +151,13 @@
     "description": "Tal y como anticipa esta página, ¡soy bilingüe!",
     "es": {
       "title": "Español",
-      "description": "Tengo nivel nativo de español ya que soy de Uruguay y he vivido mucho tiempo en España."
+      "description": "Tengo nivel nativo de español ya que soy de Uruguay y he vivido mucho tiempo en España.",
+      "image": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/locales/es/spanish256.png"
     },
     "en": {
       "title": "Ingles",
-      "description": "Tengo conocimientos de nivel profesional de la lengua inglesa (C1)."
+      "description": "Tengo conocimientos de nivel profesional de la lengua inglesa (C1).",
+      "image": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/locales/en/english256.png"
     }
   },
   "contact": {

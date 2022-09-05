@@ -157,7 +157,7 @@
     "en": {
       "title": "English",
       "description": "I professional level knowledge of the English Language (C1).",
-      "image": "https://github.com/sebadio/Portfolio-React/blob/main/docs/assets/locales/en/english256.png"
+      "image": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/locales/en/english256.png"
     }
   },
   "contact": {
