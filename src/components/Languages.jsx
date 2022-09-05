@@ -7,10 +7,10 @@ export const Languages = ({ language }) => {
 
   return (
     <div className="w-full h-full p-4 flex flex-col pb-[10vh] lg:pb-0 lg:ml-[5vw] pt-4 items-center overflow-auto">
-      <h1 className="text-[#496F69] flex justify-center items-center font-extrabold text-4xl">
+      <h1 className="text-[#496F69] flex justify-center items-center font-extrabold text-5xl">
         {<AnimatedTitle title={title} />}
       </h1>
-      <p>{description}</p>
+      <p className="mt-8">{description}</p>
       <div className="w-full h-screen flex flex-wrap justify-center items-center mb-[10vh] lg:mb-0 gap-4">
         <LanguageCard props={es} />
 
