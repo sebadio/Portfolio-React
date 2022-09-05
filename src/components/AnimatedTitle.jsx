@@ -5,8 +5,10 @@ export const AnimatedTitle = ({ title }) => {
     if (!window.matchMedia("(any-hover: none)").matches) {
       const element = e.target;
       element.style.transform = `translateY(-10px) rotateZ(-20deg)`;
+      element.style.color = "#B2A7B8";
       setTimeout(() => {
         element.style.transform = "";
+        element.style.color = "";
       }, 250);
     }
   };
