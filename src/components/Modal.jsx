@@ -18,7 +18,7 @@ export const Modal = ({ props, handleCloseModal }) => {
   return (
     <div
       id="modalBg"
-      className="fixed z-30 top-0 left-0 w-full h-screen bg-[rgba(0,0,0,0.6)] flex justify-center items-center"
+      className="fixed z-30 top-0 left-0 w-full h-screen bg-[rgba(0,0,0,0.6)] backdrop-blur-sm flex justify-center items-center"
     >
       <div
         id="modal"
@@ -57,7 +57,7 @@ export const Modal = ({ props, handleCloseModal }) => {
               link={linkToGit}
             />
           )}
-          {linkToPage && !disabled && (
+          {linkToPage && disabled !== "true" && (
             <ProjectLink
               id={`Page`}
               language={type}

@@ -58,7 +58,7 @@ export const Proyects = ({ language, type }) => {
 
   return (
     <div className="w-full h-full flex flex-col pb-[10vh] lg:pb-0 lg:ml-[5vw] pt-4 items-center overflow-auto">
-      <h1 className="text-[#496F69] flex justify-center items-center font-extrabold text-4xl">
+      <h1 className="text-[#496F69] flex justify-center items-center font-extrabold text-5xl">
         {<AnimatedTitle title={title} />}
       </h1>
       <p className="mt-4">{description}</p>

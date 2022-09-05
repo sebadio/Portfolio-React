@@ -56,7 +56,7 @@ export const Courses = ({ language, type }) => {
     <div className="w-full flex flex-col pb-[10vh] lg:pb-0 lg:ml-[5vw] pt-4 justify-center items-center overflow-auto">
       <h1
         id="titulo"
-        className="text-[#496F69] flex justify-center items-center font-extrabold text-4xl"
+        className="text-[#496F69] flex justify-center items-center font-extrabold text-5xl"
       >
         {<AnimatedTitle title={title} />}
       </h1>
