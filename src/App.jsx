@@ -1,7 +1,5 @@
 import React, { Suspense } from "react";
-
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import "./index.css";
 
 import {
   Root,
@@ -15,41 +13,13 @@ import {
   SwitchLanguage,
 } from "./components";
 
-import i18n from "i18next";
-import { initReactI18next } from "react-i18next";
-import LanguageDetector from "i18next-browser-languagedetector";
-import HttpApi from "i18next-http-backend";
 import { useTranslation } from "react-i18next";
-import i18next from "i18next";
+import { changeLanguage } from "./helper/changeLanguage";
 
-i18n
-  .use(initReactI18next)
-  .use(LanguageDetector)
-  .use(HttpApi)
-  .init({
-    fallbackLng: "en",
-    backend: {
-      loadPath:
-        "https://sebadio.github.io/Portfolio-React/assets/locales/{{lng}}/translation.json",
-    },
-    detection: {
-      order: ["cookie", "localStorage", "htmlTag", "path", "subdomain"],
-      caches: ["cookie, localStorage"],
-    },
-  });
+import "./index.css";
 
 const App = () => {
   const { t } = useTranslation();
-
-  const changeLanguage = () => {
-    i18next.changeLanguage(
-      localStorage.getItem("i18nextLng") === "es" ? "en" : "es"
-    );
-    localStorage.setItem(
-      "i18nextLng",
-      localStorage.getItem("i18nextLng") === "es" ? "en" : "es"
-    );
-  };
 
   return (
     <div className="flex w-full h-screen  bg-[#252326] text-[#C4C1C5]">

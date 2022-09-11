@@ -19,7 +19,7 @@ export const LanguageCard = ({ props }) => {
       </h2>
       <p className="text-center">{description}</p>
       <img
-        className="rounded-full border-4 border-[rgba(255,255,255,0.8)] shadow-lg shadow-[rgba(0,0,0,0.5)]"
+        className="rounded-full border-4 border-[rgba(255,255,255,0.8)] shadow-lg shadow-[rgba(0,0,0,0.5)] aspect-square"
         src={image}
       />
     </div>
