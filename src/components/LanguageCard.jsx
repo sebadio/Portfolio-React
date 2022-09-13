@@ -1,7 +1,6 @@
 import React from "react";
 
 export const LanguageCard = ({ props }) => {
-  console.log(props);
   const { title, description, image } = props;
 
   return (
