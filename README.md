@@ -2,6 +2,8 @@
 
 My Portfolio remade with React.
 
-Dependencies: 
-  - React
-  - TailWindCSS
+Dependencies:
+
+- React
+- TailWindCSS
+- Motion Framer
