@@ -1,8 +1,17 @@
 import React from "react";
+import { motion } from "framer-motion";
+import { animation } from "../helper/animation";
 
 export const Root = ({ language }) => {
+  const { initial, animate, exit } = animation;
+
   return (
-    <div className="flex relative w-full h-[80vh] m-auto md:h-full justify-center">
+    <motion.div
+      className="flex relative w-full h-[80vh] m-auto md:h-full justify-center"
+      initial={initial}
+      animate={animate}
+      exit={exit}
+    >
       <div className="relative max-h-full h-min sm:h-auto w-max rounded-3xl my-auto md:my-8 overflow-hidden">
         <img
           id="photo"
@@ -28,6 +37,6 @@ export const Root = ({ language }) => {
           </a>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };

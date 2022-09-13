@@ -1,12 +1,21 @@
+import { motion } from "framer-motion";
 import React from "react";
+import { animation } from "../helper/animation";
 import { AnimatedTitle } from "./AnimatedTitle";
 
 export const About = ({ language, type }) => {
   const { title, description, age, nationality, residence, email, phone } =
     language;
 
+  const { initial, animate, exit } = animation;
+
   return (
-    <div className="w-full h-full flex flex-col justify-center items-center gap-4 p-4 lg:ml-[5vw]">
+    <motion.div
+      className="w-full h-full flex flex-col justify-center items-center gap-4 p-4 lg:ml-[5vw]"
+      initial={initial}
+      animate={animate}
+      exit={exit}
+    >
       <h1 className="text-[#496F69] flex justify-center items-center font-extrabold text-4xl">
         {<AnimatedTitle title={title} />}
       </h1>
@@ -47,6 +56,6 @@ export const About = ({ language, type }) => {
           </ul>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };

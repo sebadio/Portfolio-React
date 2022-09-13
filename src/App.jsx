@@ -1,22 +1,13 @@
 import React, { Suspense } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 
-import {
-  Root,
-  About,
-  Contact,
-  Courses,
-  Languages,
-  NavBar,
-  Proyects,
-  Skills,
-  SwitchLanguage,
-} from "./components";
+import { NavBar, SwitchLanguage } from "./components";
 
 import { useTranslation } from "react-i18next";
 import { changeLanguage } from "./helper/changeLanguage";
 
 import "./index.css";
+import { AnimatedRoutes } from "./components/AnimatedRoutes";
 
 const App = () => {
   const { t } = useTranslation();
@@ -30,58 +21,7 @@ const App = () => {
       >
         <BrowserRouter basename="/Portfolio-React/">
           <NavBar language={t("navbar", { returnObjects: true })} />
-
-          <Routes>
-            <Route
-              path="/"
-              element={<Root language={t("root", { returnObjects: true })} />}
-            />
-            <Route
-              path="/about"
-              element={
-                <About
-                  language={t("about", { returnObjects: true })}
-                  type={t("type")}
-                />
-              }
-            />
-            <Route
-              path="/skills"
-              element={
-                <Skills language={t("skills", { returnObjects: true })} />
-              }
-            />
-            <Route
-              path="/courses"
-              element={
-                <Courses
-                  type={t("type")}
-                  language={t("courses", { returnObjects: true })}
-                />
-              }
-            />
-            <Route
-              path="/projects"
-              element={
-                <Proyects
-                  language={t("projects", { returnObjects: true })}
-                  type={t("type")}
-                />
-              }
-            />
-            <Route
-              path="/languages"
-              element={
-                <Languages language={t("languages", { returnObjects: true })} />
-              }
-            />
-            <Route
-              path="/contact"
-              element={
-                <Contact language={t("contact", { returnObjects: true })} />
-              }
-            />
-          </Routes>
+          <AnimatedRoutes t={t} />
         </BrowserRouter>
 
         <SwitchLanguage language={t("type")} changeLanguage={changeLanguage} />

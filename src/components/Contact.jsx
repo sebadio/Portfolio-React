@@ -9,6 +9,8 @@ import {
 import { faEnvelope, faG, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { InteractiveLink } from "./InteractiveLink";
 import { AnimatedTitle } from "./AnimatedTitle";
+import { motion } from "framer-motion";
+import { animation } from "../helper/animation";
 
 export const Contact = ({ language }) => {
   const { title, linkedin, github, mail, phone, whatsapp, form } = language;
@@ -23,8 +25,15 @@ export const Contact = ({ language }) => {
     button,
   } = form;
 
+  const { initial, animate, exit } = animation;
+
   return (
-    <div className="w-full h-full flex flex-col pb-[10vh] lg:pb-0 lg:ml-[5vw] pt-4 items-center overflow-auto">
+    <motion.div
+      className="w-full h-full flex flex-col pb-[10vh] lg:pb-0 lg:ml-[5vw] pt-4 items-center overflow-auto"
+      initial={initial}
+      animate={animate}
+      exit={exit}
+    >
       <h1 className="text-[#496F69] flex justify-center items-center font-extrabold text-5xl">
         {<AnimatedTitle title={title} />}
       </h1>
@@ -79,6 +88,6 @@ export const Contact = ({ language }) => {
           </form>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
