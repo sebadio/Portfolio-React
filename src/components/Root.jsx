@@ -1,9 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { animation } from "../helper/animation";
+import { useState } from "react";
 
 export const Root = ({ language }) => {
   const { initial, animate, exit } = animation;
+  const [isLoading, setIsLoading] = useState(true);
 
   return (
     <motion.div
@@ -13,7 +15,14 @@ export const Root = ({ language }) => {
       exit={exit}
     >
       <div className="relative max-h-full h-min sm:h-auto w-max rounded-3xl my-auto md:my-8 overflow-hidden">
+        {isLoading && (
+          <div className="h-full w-full flex justify-center items-center">
+            <div className="w-8 aspect-square h-auto p-2 border-4 border-[#496F69] border-t-[rgba(0,0,0,0.3)] border-l-[rgba(0,0,0,0.3)] rounded-full animate-spin"></div>
+          </div>
+        )}
+
         <img
+          onLoad={() => setIsLoading(false)}
           id="photo"
           className="max-h-full"
           src="https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/FotoCV.jpg"
