@@ -14,7 +14,11 @@ export const Root = ({ language }) => {
       animate={animate}
       exit={exit}
     >
-      <div className="relative max-h-full h-min sm:h-auto w-max rounded-3xl my-auto md:my-8 overflow-hidden">
+      <div
+        className={`relative max-h-full h-min sm:h-auto w-max rounded-3xl my-auto md:my-8 overflow-hidden ${
+          isLoading ? "border-2 border-white" : ""
+        }`}
+      >
         {isLoading && (
           <div className="h-full w-full flex justify-center items-center">
             <div className="w-8 aspect-square h-auto p-2 border-4 border-[#496F69] border-t-[rgba(0,0,0,0.3)] border-l-[rgba(0,0,0,0.3)] rounded-full animate-spin"></div>
