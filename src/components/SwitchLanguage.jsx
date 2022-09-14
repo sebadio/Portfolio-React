@@ -2,23 +2,7 @@ import { motion } from "framer-motion";
 import React from "react";
 
 export const SwitchLanguage = ({ language, changeLanguage }) => {
-  const handleDrag = (e) => {
-    console.log(e);
-  };
-
   return (
-    /*     <select
-      onChange={changeLanguage}
-      className="fixed top-2 right-2 bg-transparent"
-      defaultValue={localStorage.getItem("i18nextLng") === "es" ? "es" : "en"}
-    >
-      <option className="bg-black" value="es">
-        Español
-      </option>
-      <option className="bg-black" value="en">
-        English
-      </option>
-    </select> */
     <motion.img
       drag={true}
       dragConstraints={{
@@ -29,8 +13,9 @@ export const SwitchLanguage = ({ language, changeLanguage }) => {
       }}
       dragTransition={{ bounceStiffness: 600, bounceDamping: 20 }}
       whileTap={{ cursor: "grabbing" }}
+      whileDrag={{ cursor: "grabbing" }}
       onClick={changeLanguage}
-      className="rounded-full w-[3rem] h-[3rem] lg:w-auto lg:h-auto fixed top-2 right-4 transition-all shadow-lg shadow-black opacity-40 hover:opacity-100 hover:cursor-pointer"
+      className="rounded-full w-[3rem] h-[3rem] lg:w-auto lg:h-auto fixed top-2 right-4 shadow-lg shadow-black opacity-40 transition-opacity hover:opacity-100 hover:cursor-pointer"
       src={
         language === "es"
           ? "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/locales/es/spanish64.png"
