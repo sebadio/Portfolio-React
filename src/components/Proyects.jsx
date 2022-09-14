@@ -35,7 +35,7 @@ export const Proyects = ({ language, type }) => {
         />
       )}
 
-      <div className="flex flex-wrap gap-2 justify-center items-center p-4">
+      <div className="flex w-full h-full flex-wrap gap-2 justify-center items-center p-4">
         {projectsArray.map(
           ({ title, description, linkToPage, linkToGit, image, disabled }) => (
             <InteractiveDiv

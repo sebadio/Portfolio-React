@@ -38,7 +38,7 @@ export const Courses = ({ language, type }) => {
         />
       )}
 
-      <div className="flex flex-wrap justify-around items-center p-2 mt-12 gap-3">
+      <div className="flex w-full h-f flex-wrap justify-around items-center p-2 mt-12 gap-3">
         {coursesArray.map(({ title, description, link, image }) => (
           <InteractiveDiv
             handleShowModal={() => {
