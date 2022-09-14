@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import React from "react";
 import { animation } from "../helper/animation";
 import { AnimatedTitle } from "./AnimatedTitle";
+import { TechnicalSkill } from "./TechnicalSkill";
 
 export const Skills = ({ language }) => {
   const { title, description, skillsArray, softSkillsDescription, softSkills } =
@@ -23,15 +24,9 @@ export const Skills = ({ language }) => {
       <div className="flex flex-col h-[40vh] lg:flex-row justify-center items-center">
         <p className="p-4">{description}</p>
 
-        <div className="flex flex-wrap justify-center items-baseline h-full p-4 lg:p-0 lg:gap-4">
-          {skillsArray.map((skill) => (
-            <div
-              key={skill.title}
-              className="flex flex-col items-center w-1/2 lg:w-[9vw] mt-4 lg:mt-0 hover:text-[#496F69] transition-all"
-            >
-              <img className="w-full" src={skill.imgLink} alt={skill.title} />
-              <span className="text-lg mt-2 font-semibold">{skill.title}</span>
-            </div>
+        <div className="flex w-full flex-wrap justify-center items-baseline h-full p-4 lg:p-0 lg:gap-4">
+          {skillsArray.map(({ title, imgLink }) => (
+            <TechnicalSkill key={title} title={title} imgLink={imgLink} />
           ))}
         </div>
       </div>
