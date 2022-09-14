@@ -19,7 +19,7 @@ export const LanguageCard = ({ props }) => {
         {title}
       </h2>
       <p className="text-center">{description}</p>
-      <div className="h-1/2 lg:h-3/4 rounded-full aspect-square border-4 border-[rgba(255,255,255,0.8)] shadow-lg shadow-[rgba(0,0,0,0.5)] overflow-hidden">
+      <div className="h-1/2 lg:h-3/4 max-h-56 rounded-full aspect-square border-4 border-[rgba(255,255,255,0.8)] shadow-lg shadow-[rgba(0,0,0,0.5)] overflow-hidden">
         {isLoading && (
           <div className="w-full h-full flex justify-center items-center">
             <div className="w-full h-full bg-[rgba(255,255,255,0.25)] animate-pulse rounded-full "></div>
@@ -27,7 +27,7 @@ export const LanguageCard = ({ props }) => {
         )}
         <img
           onLoad={() => setIsLoading(false)}
-          className="rounded-full  aspect-square"
+          className="rounded-full aspect-square"
           src={image}
         />
       </div>
