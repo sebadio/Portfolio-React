@@ -16,7 +16,7 @@ export const Courses = ({ language, type }) => {
 
   return (
     <motion.div
-      className="w-full flex flex-col pb-[10vh] lg:pb-0 lg:ml-[5vw] pt-4 justify-center items-center overflow-auto"
+      className="w-full flex flex-col pb-[10vh] lg:pb-0 lg:ml-[5vw] pt-4 lg:justify-center items-center overflow-auto"
       initial={initial}
       animate={animate}
       exit={exit}
@@ -38,7 +38,7 @@ export const Courses = ({ language, type }) => {
         />
       )}
 
-      <div className="flex w-full h-f flex-wrap justify-around items-center p-2 mt-12 gap-3">
+      <div className="flex overflow-auto w-full h-f flex-wrap justify-around items-center p-2 mt-12 gap-3">
         {coursesArray.map(({ title, description, link, image }) => (
           <InteractiveDiv
             handleShowModal={() => {

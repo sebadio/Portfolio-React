@@ -9,13 +9,13 @@ export const Root = ({ language }) => {
 
   return (
     <motion.div
-      className="flex relative w-full h-[80vh] m-auto md:h-full justify-center"
+      className="flex relative w-full h-[80vh] mt-4 lg:mt-0 p-2 md:h-full justify-center"
       initial={initial}
       animate={animate}
       exit={exit}
     >
       <div
-        className={`relative max-h-full h-min sm:h-auto w-max rounded-3xl my-auto md:my-8 overflow-hidden ${
+        className={`relative max-h-full h-min sm:h-auto aspect-[9/16] rounded-3xl my-auto md:my-8 overflow-hidden ${
           isLoading ? "border-2 border-white" : ""
         }`}
       >
@@ -28,11 +28,11 @@ export const Root = ({ language }) => {
         <img
           onLoad={() => setIsLoading(false)}
           id="photo"
-          className="max-h-full"
+          className="max-h-full rounded-3xl"
           src="https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/FotoCV.jpg"
         />
 
-        <div className="absolute bottom-0 h-1/3 w-full flex flex-col justify-center items-center gap-4 md:gap-12 backdrop-blur-xl">
+        <div className="absolute bottom-0 h-1/3 w-full flex flex-col justify-center rounded-b-3xl items-center gap-4 md:gap-12 backdrop-blur-xl">
           <div className="flex flex-col text-center">
             <h1 className="font-bold text-3xl">{language.title}</h1>
             <p className="font-semibold text-lg">{language.description}</p>

@@ -24,7 +24,7 @@ export const Proyects = ({ language, type }) => {
       <h1 className="text-[#496F69] flex justify-center items-center font-extrabold text-5xl">
         {<AnimatedTitle title={title} />}
       </h1>
-      <p className="mt-4">{description}</p>
+      <p className="mt-4 px-4">{description}</p>
 
       {showModal && (
         <Modal
@@ -35,7 +35,7 @@ export const Proyects = ({ language, type }) => {
         />
       )}
 
-      <div className="flex w-full h-full flex-wrap gap-2 justify-center items-center p-4">
+      <div className="flex overflow-auto w-full h-full flex-wrap gap-2 justify-center items-center p-4">
         {projectsArray.map(
           ({ title, description, linkToPage, linkToGit, image, disabled }) => (
             <InteractiveDiv
