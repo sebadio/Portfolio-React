@@ -21,7 +21,11 @@ export const InteractiveDiv = ({ image, title, handleShowModal, type }) => {
       {isLoading && (
         <div className="w-full h-full bg-[rgba(0,0,0,0.55)] animate-pulse"></div>
       )}
-      <img onLoad={() => setIsLoading(false)} src={image} />
+      <img
+        onLoad={() => setIsLoading(false)}
+        className={`${isLoading ? "opacity-0" : "opacity-100"} transition-all`}
+        src={image}
+      />
     </div>
   );
 };
