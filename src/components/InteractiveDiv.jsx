@@ -19,7 +19,11 @@ export const InteractiveDiv = ({ image, title, handleShowModal, type }) => {
       after={title}
     >
       {isLoading && (
-        <div className="w-full h-full bg-[rgba(0,0,0,0.55)] animate-pulse"></div>
+        <div className="w-full h-full bg-[rgba(0,0,0,0.55)] animate-pulse flex justify-center items-center gap-2">
+          <div className="rounded-full w-4 h-4 bg-[#496f69] animate-bounce delayed-1"></div>
+          <div className="rounded-full w-4 h-4 bg-[#496f69] animate-bounce delayed-2"></div>
+          <div className="rounded-full w-4 h-4 bg-[#496f69] animate-bounce delayed-3"></div>
+        </div>
       )}
       <img
         onLoad={() => setIsLoading(false)}

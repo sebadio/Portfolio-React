@@ -23,3 +23,15 @@
 .perspective {
   transform: perspective(1000px);
 }
+
+.delayed-1 {
+  animation-delay: 0ms;
+}
+
+.delayed-2 {
+  animation-delay: 150ms;
+}
+
+.delayed-3 {
+  animation-delay: 300ms;
+}
