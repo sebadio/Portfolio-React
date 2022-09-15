@@ -12,7 +12,7 @@ export const Skills = ({ language }) => {
 
   return (
     <motion.div
-      className="w-full h-full flex flex-wrap flex-col pb-[10vh] lg:pb-0 lg:ml-[5vw] pt-4 items-center overflow-auto"
+      className="w-full h-full flex flex-col pb-[10vh] lg:pb-0 lg:ml-[5vw] pt-4 items-center overflow-auto"
       initial={initial}
       animate={animate}
       exit={exit}
@@ -21,7 +21,7 @@ export const Skills = ({ language }) => {
         {<AnimatedTitle title={title} />}
       </h1>
 
-      <div className="flex flex-col h-[40vh] lg:flex-row justify-center items-center">
+      <div className="flex flex-col lg:h-[40vh] lg:flex-row items-center">
         <p className="p-4">{description}</p>
 
         <div className="flex w-full flex-wrap justify-center items-baseline h-full p-4 lg:p-0 lg:gap-4">

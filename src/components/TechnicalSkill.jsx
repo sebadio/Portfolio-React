@@ -5,7 +5,11 @@ export const TechnicalSkill = ({ title, imgLink }) => {
   const [isLoading, setIsLoading] = useState(true);
 
   return (
-    <div className="flex flex-col items-center w-1/2 h-1/2 lg:w-[9vw] mt-4 lg:mt-0 hover:text-[#496F69] transition-all overflow-hidden">
+    <div
+      after={title}
+      className={`flex flex-col items-center w-1/3 aspect-square lg:w-[9vw] mt-4 lg:mt-0 hover:text-[#496F69] transition-all 
+                  after:content-[attr(after)] after:-bottom-4 after:left-0 after:text-center after:w-full after:h-4`}
+    >
       {isLoading && (
         <div
           className={`w-full h-full flex justify-center items-center ${
@@ -22,7 +26,6 @@ export const TechnicalSkill = ({ title, imgLink }) => {
         src={imgLink}
         alt={title}
       />
-      <span className="text-lg mt-2 font-semibold">{title}</span>
     </div>
   );
 };
