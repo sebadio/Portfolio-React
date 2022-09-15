@@ -7,6 +7,8 @@ export const Root = ({ language }) => {
   const { initial, animate, exit } = animation;
   const [isLoading, setIsLoading] = useState(true);
 
+  const { title, description, cvLink } = language;
+
   return (
     <motion.div
       className="flex relative w-full h-[80vh] mt-4 lg:mt-0 p-2 md:h-full justify-center"
@@ -34,16 +36,16 @@ export const Root = ({ language }) => {
 
         <div className="absolute bottom-0 h-1/3 w-full flex flex-col justify-center rounded-b-3xl items-center gap-4 md:gap-12 backdrop-blur-xl">
           <div className="flex flex-col text-center">
-            <h1 className="font-bold text-3xl">{language.title}</h1>
-            <p className="font-semibold text-lg">{language.description}</p>
+            <h1 className="font-bold text-3xl">{title}</h1>
+            <p className="font-semibold text-lg">{description}</p>
           </div>
           <a
             className="py-2 px-6 rounded-full border-2 w-max font-bold transition-all shadow-2xl shadow-black border-[#B2A7B8] hover:bg-[#4D4352]"
-            href="https://sebadio.github.io/Portfolio-React/assets/CV.pdf"
+            href={cvLink}
             target="_blank"
             rel="noopener noreferrer"
           >
-            {language.description === "Desarrollador Web Junior"
+            {description === "Desarrollador Web Junior"
               ? "Descargar "
               : "Download "}
             CV
