@@ -1,7 +1,8 @@
 {
   "root": {
     "title": "Sebastián Díaz Dopazo",
-    "description": "Desarrollador Web Junior"
+    "description": "Desarrollador Web Junior",
+    "cvLink": "https://sebadio.github.io/Portfolio-React/assets/CV.pdf"
   },
   "type": "es",
   "navbar": {
