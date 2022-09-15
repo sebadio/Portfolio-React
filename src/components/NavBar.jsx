@@ -10,7 +10,7 @@ import {
   faListCheck,
 } from "@fortawesome/free-solid-svg-icons";
 
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useState } from "react";
 
 export const NavBar = ({ language }) => {
@@ -26,8 +26,12 @@ export const NavBar = ({ language }) => {
       }}
       className="bg-[#121113] h-[10vh] lg:h-full lg:w-[5vw] lg:hover:w-[10vw] transition-all lg:flex-col flex w-full fixed bottom-0 z-20 border-t-2 lg:border-t-0 lg:border-r-2 border-[#B2A7B8] shadow-2xl shadow-black "
     >
-      <Link
-        className="hover:bg-[#4D4352] hover:text-[#fff] lg:text-xl transition-all w-full h-full flex flex-col justify-center items-center "
+      <NavLink
+        className={({ isActive }) =>
+          `hover:bg-[#4D4352] hover:text-[#FFF5FF] lg:text-xl transition-all w-full h-full flex flex-col justify-center items-center pt-[1.32rem] ${
+            isActive ? "text-[#FFF5FF] bg-[#4D4352]" : ""
+          }`
+        }
         to={"/"}
       >
         <FontAwesomeIcon icon={faHouse} />
@@ -40,9 +44,13 @@ export const NavBar = ({ language }) => {
         >
           {language.home}
         </span>
-      </Link>
-      <Link
-        className="hover:bg-[#4D4352] hover:text-[#FFF5FF] lg:text-xl transition-all w-full h-full flex flex-col justify-center items-center "
+      </NavLink>
+      <NavLink
+        className={({ isActive }) =>
+          `hover:bg-[#4D4352] hover:text-[#FFF5FF] lg:text-xl transition-all w-full h-full flex flex-col justify-center items-center pt-[1.32rem] ${
+            isActive ? "text-[#FFF5FF] bg-[#4D4352]" : ""
+          }`
+        }
         to={"/about"}
       >
         <FontAwesomeIcon icon={faIdBadge} />
@@ -55,9 +63,13 @@ export const NavBar = ({ language }) => {
         >
           {language.about}
         </span>
-      </Link>
-      <Link
-        className="hover:bg-[#4D4352] hover:text-[#FFF5FF] lg:text-xl transition-all w-full h-full flex flex-col justify-center items-center "
+      </NavLink>
+      <NavLink
+        className={({ isActive }) =>
+          `hover:bg-[#4D4352] hover:text-[#FFF5FF] lg:text-xl transition-all w-full h-full flex flex-col justify-center items-center pt-[1.32rem] ${
+            isActive ? "text-[#FFF5FF] bg-[#4D4352]" : ""
+          }`
+        }
         to={"/skills"}
       >
         <FontAwesomeIcon icon={faCode} />
@@ -70,9 +82,13 @@ export const NavBar = ({ language }) => {
         >
           {language.skills}
         </span>
-      </Link>
-      <Link
-        className="hover:bg-[#4D4352] hover:text-[#FFF5FF] lg:text-xl transition-all w-full h-full flex flex-col justify-center items-center "
+      </NavLink>
+      <NavLink
+        className={({ isActive }) =>
+          `hover:bg-[#4D4352] hover:text-[#FFF5FF] lg:text-xl transition-all w-full h-full flex flex-col justify-center items-center pt-[1.32rem] ${
+            isActive ? "text-[#FFF5FF] bg-[#4D4352]" : ""
+          }`
+        }
         to={"/courses"}
       >
         <FontAwesomeIcon icon={faChalkboardUser} />
@@ -85,9 +101,13 @@ export const NavBar = ({ language }) => {
         >
           {language.courses}
         </span>
-      </Link>
-      <Link
-        className="hover:bg-[#4D4352] hover:text-[#FFF5FF] lg:text-xl transition-all w-full h-full flex flex-col justify-center items-center "
+      </NavLink>
+      <NavLink
+        className={({ isActive }) =>
+          `hover:bg-[#4D4352] hover:text-[#FFF5FF] lg:text-xl transition-all w-full h-full flex flex-col justify-center items-center pt-[1.32rem] ${
+            isActive ? "text-[#FFF5FF] bg-[#4D4352]" : ""
+          }`
+        }
         to={"/projects"}
       >
         <FontAwesomeIcon icon={faListCheck} />
@@ -100,9 +120,13 @@ export const NavBar = ({ language }) => {
         >
           {language.projects}
         </span>
-      </Link>
-      <Link
-        className="hover:bg-[#4D4352] hover:text-[#FFF5FF] lg:text-xl transition-all w-full h-full flex flex-col justify-center items-center "
+      </NavLink>
+      <NavLink
+        className={({ isActive }) =>
+          `hover:bg-[#4D4352] hover:text-[#FFF5FF] lg:text-xl transition-all w-full h-full flex flex-col justify-center items-center pt-[1.32rem] ${
+            isActive ? "text-[#FFF5FF] bg-[#4D4352]" : ""
+          }`
+        }
         to={"/languages"}
       >
         <FontAwesomeIcon icon={faLanguage} />
@@ -115,9 +139,13 @@ export const NavBar = ({ language }) => {
         >
           {language.languages}
         </span>
-      </Link>
-      <Link
-        className="hover:bg-[#4D4352] hover:text-[#FFF5FF] lg:text-xl transition-all w-full h-full flex flex-col justify-center items-center "
+      </NavLink>
+      <NavLink
+        className={({ isActive }) =>
+          `hover:bg-[#4D4352] hover:text-[#FFF5FF] lg:text-xl transition-all w-full h-full flex flex-col justify-center items-center pt-[1.32rem] ${
+            isActive ? "text-[#FFF5FF] bg-[#4D4352]" : ""
+          }`
+        }
         to={"/contact"}
       >
         <FontAwesomeIcon icon={faEnvelope} />
@@ -130,7 +158,7 @@ export const NavBar = ({ language }) => {
         >
           {language.contact}
         </span>
-      </Link>
+      </NavLink>
     </nav>
   );
 };
