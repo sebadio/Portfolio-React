@@ -35,3 +35,8 @@
 .delayed-3 {
   animation-delay: 300ms;
 }
+
+* {
+  user-select: none;
+  -webkit-user-drag: none;
+}
