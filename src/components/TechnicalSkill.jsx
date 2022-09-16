@@ -8,7 +8,7 @@ export const TechnicalSkill = ({ title, imgLink }) => {
     <div
       after={title}
       className={`flex flex-col items-center w-1/3 aspect-square lg:w-[9vw] mt-4 lg:mt-0 hover:text-[#496F69] transition-all 
-                  after:content-[attr(after)] after:-bottom-4 after:left-0 after:text-center after:w-full after:h-4`}
+                  after:content-[attr(after)] after:-bottom-4 after:left-0 after:font-semibold after:text-center after:w-full after:h-4`}
     >
       {isLoading && (
         <div
