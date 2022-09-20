@@ -23,7 +23,7 @@ export const Root = ({ language }) => {
       >
         {isLoading && (
           <div className="h-full w-full flex justify-center items-center">
-            <div className="w-8 aspect-square h-auto p-2 border-4 border-[#496F69] border-t-[rgba(0,0,0,0.3)] border-l-[rgba(0,0,0,0.3)] rounded-full animate-spin"></div>
+            <div className="w-8 aspect-square h-auto p-2 border-4 border-[#fc3986] border-t-[rgba(0,0,0,0.3)] border-l-[rgba(0,0,0,0.3)] rounded-full animate-spin"></div>
           </div>
         )}
 
@@ -36,14 +36,17 @@ export const Root = ({ language }) => {
 
         <div className="absolute bottom-0 h-1/3 w-full flex flex-col justify-center rounded-b-3xl items-center gap-4 md:gap-12 backdrop-blur-xl">
           <div className="flex flex-col text-center">
-            <h1 className="font-bold text-3xl">{title}</h1>
-            <p className="font-semibold text-lg">{description}</p>
+            <h1 className="font-bold text-[#f9f9f9] text-3xl">{title}</h1>
+            <p className="font-semibold text-[#f9f9f9] text-lg">
+              {description}
+            </p>
           </div>
           <a
-            className="py-2 px-6 rounded-full border-2 w-max font-bold transition-all shadow-2xl shadow-black border-[#B2A7B8] hover:bg-[#fc398660]"
+            className="relative py-2 px-6 rounded-full w-max font-bold border-2 transition-all shadow-2xl shadow-black hover:bg-[#fc398660] hover:text-white"
             href={cvLink}
             target="_blank"
             rel="noopener noreferrer"
+            description={description}
           >
             {description === "Desarrollador Web Junior"
               ? "Descargar "

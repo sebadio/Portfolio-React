@@ -16,7 +16,9 @@ const App = () => {
     <div className="flex w-full h-screen aniBg text-[#C4C1C5]">
       <Suspense
         fallback={
-          <div className="loading w-4 h-4 border-8  p-4 m-4 rounded-full border-t-slate-900 animate-spin"></div>
+          <div className="w-full h-screen flex justify-center items-center">
+            <div className="w-8 aspect-square h-auto p-2 border-4 border-[#fc3986] border-t-[rgba(0,0,0,0.3)] border-l-[rgba(0,0,0,0.3)] rounded-full animate-spin"></div>
+          </div>
         }
       >
         <BrowserRouter basename="/Portfolio-React/">

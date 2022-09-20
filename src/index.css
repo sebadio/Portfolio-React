@@ -44,6 +44,7 @@
 .aniBg {
   background-image: linear-gradient(to right, #08285c 0%, #660833 100%);
   background-size: 500%;
+  backdrop-filter: blur(30px);
   animation: animationBg 20s infinite alternate linear;
 }
 
