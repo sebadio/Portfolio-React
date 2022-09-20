@@ -13,7 +13,7 @@ const App = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="flex w-full h-screen  bg-[#252326] text-[#C4C1C5]">
+    <div className="flex w-full h-screen aniBg text-[#C4C1C5]">
       <Suspense
         fallback={
           <div className="loading w-4 h-4 border-8  p-4 m-4 rounded-full border-t-slate-900 animate-spin"></div>

@@ -16,11 +16,9 @@ export const About = ({ language, type }) => {
       animate={animate}
       exit={exit}
     >
-      <h1 className="text-[#496F69] flex justify-center items-center font-extrabold text-4xl">
-        {<AnimatedTitle title={title} />}
-      </h1>
-      <div className="flex flex-wrap w-full gap-12 lg:h-full mt-24 lg:gap-0">
-        <p className="flex-1 w-full h-min">{description}</p>
+      <AnimatedTitle title={title} />
+      <div className="flex flex-col w-full gap-12 lg:h-full mt-24 lg:gap-0">
+        <p className="flex-1 lg:px-[25vw] w-full h-min">{description}</p>
         <div className="flex-1 flex-col lg:flex-row flex justify-center">
           <ul>
             <li className="p-1">

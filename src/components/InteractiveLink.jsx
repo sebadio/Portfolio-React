@@ -86,7 +86,7 @@ export const InteractiveLink = ({ id, link, icono }) => {
       />
       <div
         id={`${id}bg`}
-        className="absolute w-[60px] h-[60px] bg-[#496F69] rounded-3xl pointer-events-none shadow-xl shadow-[#496F6933] bg"
+        className="absolute w-[60px] h-[60px] bg-[#fc3986] rounded-3xl pointer-events-none shadow-xl shadow-[#fc398633] bg"
       ></div>
     </a>
   );

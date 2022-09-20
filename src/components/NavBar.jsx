@@ -24,12 +24,12 @@ export const NavBar = ({ language }) => {
       onMouseLeave={() => {
         setIsHovered(false);
       }}
-      className="bg-[#121113] h-[10vh] lg:h-full lg:w-[5vw] lg:hover:w-[10vw] transition-all lg:flex-col flex w-full fixed bottom-0 z-20 border-t-2 lg:border-t-0 lg:border-r-2 border-[#B2A7B8] shadow-2xl shadow-black "
+      className="bg-[rgba(0,0,0,0.75)] h-[10vh] lg:h-full lg:w-[5vw] lg:hover:w-[10vw] backdrop-blur-sm transition-all lg:flex-col flex w-full fixed bottom-0 z-20 border-t-2 lg:border-t-0 lg:border-r-2 border-[#B2A7B8] shadow-2xl shadow-black "
     >
       <NavLink
         className={({ isActive }) =>
-          `hover:bg-[#4D4352] hover:text-[#FFF5FF] lg:text-xl transition-all w-full h-full flex flex-col justify-center items-center lg:pt-[1.32rem] ${
-            isActive ? "text-[#FFF5FF] bg-[#4D4352]" : ""
+          `hover:bg-[#fc398660] hover:text-[#FFF5FF] lg:text-xl transition-all w-full h-full flex flex-col justify-center items-center lg:pt-[1.32rem] ${
+            isActive ? "text-[#FFF5FF] bg-[#fc398660]" : ""
           }`
         }
         to={"/"}
@@ -47,8 +47,8 @@ export const NavBar = ({ language }) => {
       </NavLink>
       <NavLink
         className={({ isActive }) =>
-          `hover:bg-[#4D4352] hover:text-[#FFF5FF] lg:text-xl transition-all w-full h-full flex flex-col justify-center items-center lg:pt-[1.32rem] ${
-            isActive ? "text-[#FFF5FF] bg-[#4D4352]" : ""
+          `hover:bg-[#fc398660] hover:text-[#FFF5FF] lg:text-xl transition-all w-full h-full flex flex-col justify-center items-center lg:pt-[1.32rem] ${
+            isActive ? "text-[#FFF5FF] bg-[#fc398660]" : ""
           }`
         }
         to={"/about"}
@@ -66,8 +66,8 @@ export const NavBar = ({ language }) => {
       </NavLink>
       <NavLink
         className={({ isActive }) =>
-          `hover:bg-[#4D4352] hover:text-[#FFF5FF] lg:text-xl transition-all w-full h-full flex flex-col justify-center items-center lg:pt-[1.32rem] ${
-            isActive ? "text-[#FFF5FF] bg-[#4D4352]" : ""
+          `hover:bg-[#fc398660] hover:text-[#FFF5FF] lg:text-xl transition-all w-full h-full flex flex-col justify-center items-center lg:pt-[1.32rem] ${
+            isActive ? "text-[#FFF5FF] bg-[#fc398660]" : ""
           }`
         }
         to={"/skills"}
@@ -85,8 +85,8 @@ export const NavBar = ({ language }) => {
       </NavLink>
       <NavLink
         className={({ isActive }) =>
-          `hover:bg-[#4D4352] hover:text-[#FFF5FF] lg:text-xl transition-all w-full h-full flex flex-col justify-center items-center lg:pt-[1.32rem] ${
-            isActive ? "text-[#FFF5FF] bg-[#4D4352]" : ""
+          `hover:bg-[#fc398660] hover:text-[#FFF5FF] lg:text-xl transition-all w-full h-full flex flex-col justify-center items-center lg:pt-[1.32rem] ${
+            isActive ? "text-[#FFF5FF] bg-[#fc398660]" : ""
           }`
         }
         to={"/courses"}
@@ -104,8 +104,8 @@ export const NavBar = ({ language }) => {
       </NavLink>
       <NavLink
         className={({ isActive }) =>
-          `hover:bg-[#4D4352] hover:text-[#FFF5FF] lg:text-xl transition-all w-full h-full flex flex-col justify-center items-center lg:pt-[1.32rem] ${
-            isActive ? "text-[#FFF5FF] bg-[#4D4352]" : ""
+          `hover:bg-[#fc398660] hover:text-[#FFF5FF] lg:text-xl transition-all w-full h-full flex flex-col justify-center items-center lg:pt-[1.32rem] ${
+            isActive ? "text-[#FFF5FF] bg-[#fc398660]" : ""
           }`
         }
         to={"/projects"}
@@ -123,8 +123,8 @@ export const NavBar = ({ language }) => {
       </NavLink>
       <NavLink
         className={({ isActive }) =>
-          `hover:bg-[#4D4352] hover:text-[#FFF5FF] lg:text-xl transition-all w-full h-full flex flex-col justify-center items-center lg:pt-[1.32rem] ${
-            isActive ? "text-[#FFF5FF] bg-[#4D4352]" : ""
+          `hover:bg-[#fc398660] hover:text-[#FFF5FF] lg:text-xl transition-all w-full h-full flex flex-col justify-center items-center lg:pt-[1.32rem] ${
+            isActive ? "text-[#FFF5FF] bg-[#fc398660]" : ""
           }`
         }
         to={"/languages"}
@@ -142,8 +142,8 @@ export const NavBar = ({ language }) => {
       </NavLink>
       <NavLink
         className={({ isActive }) =>
-          `hover:bg-[#4D4352] hover:text-[#FFF5FF] lg:text-xl transition-all w-full h-full flex flex-col justify-center items-center lg:pt-[1.32rem] ${
-            isActive ? "text-[#FFF5FF] bg-[#4D4352]" : ""
+          `hover:bg-[#fc398660] hover:text-[#FFF5FF] lg:text-xl transition-all w-full h-full flex flex-col justify-center items-center lg:pt-[1.32rem] ${
+            isActive ? "text-[#FFF5FF] bg-[#fc398660]" : ""
           }`
         }
         to={"/contact"}

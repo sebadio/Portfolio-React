@@ -35,8 +35,24 @@
 .delayed-3 {
   animation-delay: 300ms;
 }
-
+/* 
 * {
   user-select: none;
   -webkit-user-drag: none;
+} */
+
+.aniBg {
+  background-image: linear-gradient(to right, #08285c 0%, #660833 100%);
+  background-size: 500%;
+  animation: animationBg 20s infinite alternate linear;
+}
+
+@keyframes animationBg {
+  0% {
+    background-position: left;
+  }
+
+  100% {
+    background-position: right;
+  }
 }

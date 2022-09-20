@@ -22,14 +22,14 @@ export const Modal = ({ props, handleCloseModal }) => {
     >
       <div
         id="modal"
-        className="flex flex-col z-50 bg-[#252326] w-[95vw] lg:w-1/2 h-auto p-4 rounded-lg shadow-lg shadow-[rgba(0,0,0,0.8)] -translate-y-[100vh]"
+        className="flex flex-col z-50 bg-[rgba(5,5,5,0.5)] backdrop-blur-xl w-[95vw] lg:w-1/2 h-auto p-4 rounded-lg shadow-lg shadow-[rgba(0,0,0,0.8)] -translate-y-[100vh]"
       >
         <div className="flex justify-between">
           <h1 className="text-[#B2A7B8] font-bold text-2xl select-none">
             {title}
           </h1>
           <FontAwesomeIcon
-            className="text-[#B2A7B8] text-3xl cursor-pointer hover:text-[#496F69] transition-all"
+            className="text-[#B2A7B8] text-3xl cursor-pointer hover:text-[#fc3986] transition-all"
             onClick={handleCloseModal}
             icon={faXmark}
           />

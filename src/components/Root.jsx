@@ -40,7 +40,7 @@ export const Root = ({ language }) => {
             <p className="font-semibold text-lg">{description}</p>
           </div>
           <a
-            className="py-2 px-6 rounded-full border-2 w-max font-bold transition-all shadow-2xl shadow-black border-[#B2A7B8] hover:bg-[#4D4352]"
+            className="py-2 px-6 rounded-full border-2 w-max font-bold transition-all shadow-2xl shadow-black border-[#B2A7B8] hover:bg-[#fc398660]"
             href={cvLink}
             target="_blank"
             rel="noopener noreferrer"

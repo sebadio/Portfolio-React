@@ -21,13 +21,10 @@ export const Courses = ({ language, type }) => {
       animate={animate}
       exit={exit}
     >
-      <h1
-        id="titulo"
-        className="text-[#496F69] flex justify-center items-center font-extrabold text-5xl"
-      >
-        {<AnimatedTitle title={title} />}
-      </h1>
-      <p className="mt-4">{description}</p>
+      <AnimatedTitle title={title} />
+      <p className="mt-4 font-semibold text-white bg-[rgba(0,0,0,0.5)] rounded-full p-2 px-4">
+        {description}
+      </p>
 
       {showModal && (
         <Modal
