@@ -24,7 +24,7 @@ export const NavBar = ({ language }) => {
       onMouseLeave={() => {
         setIsHovered(false);
       }}
-      className="bg-[rgba(0,0,0,0.75)] h-[10vh] lg:h-full lg:w-[5vw] lg:hover:w-[10vw] backdrop-blur-sm transition-all lg:flex-col flex w-full fixed bottom-0 z-20 border-t-2 lg:border-t-0 lg:border-r-2 border-[#B2A7B8] shadow-2xl shadow-black "
+      className="bg-[rgba(0,0,0,0.75)] h-[10vh] lg:h-full lg:w-[5vw] lg:hover:w-[10vw] backdrop-blur-xl transition-all lg:flex-col flex w-full fixed bottom-0 z-20 border-t-2 lg:border-t-0 lg:border-r-2 border-[#B2A7B8] shadow-2xl shadow-black "
     >
       <NavLink
         className={({ isActive }) =>

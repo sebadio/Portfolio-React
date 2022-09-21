@@ -22,7 +22,7 @@ export const Courses = ({ language, type }) => {
       exit={exit}
     >
       <AnimatedTitle title={title} />
-      <p className="mt-4 font-semibold text-white bg-[rgba(0,0,0,0.5)] rounded-full p-2 px-4">
+      <p className="mt-4 font-semibold text-white bg-[rgba(0,0,0,0.5)] rounded-full p-2 px-4 z-10">
         {description}
       </p>
 

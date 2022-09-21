@@ -10,6 +10,7 @@ import {
 } from "./index";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
+import { Form } from "./Form";
 
 export const AnimatedRoutes = ({ t }) => {
   const location = useLocation();
@@ -61,6 +62,10 @@ export const AnimatedRoutes = ({ t }) => {
         <Route
           path="/contact"
           element={<Contact language={t("contact", { returnObjects: true })} />}
+        />
+        <Route
+          path="/form"
+          element={<Form language={t("contact", { returnObjects: true })} />}
         />
       </Routes>
     </AnimatePresence>

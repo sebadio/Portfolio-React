@@ -19,8 +19,8 @@ export const Skills = ({ language }) => {
     >
       <AnimatedTitle title={title} />
 
-      <div className="flex flex-col lg:flex-row items-center mb-4">
-        <p className="p-4 text-2xl bg-[rgba(0,0,0,0.5)] backdrop-blur-md rounded-lg m-2 text-white">
+      <div className="flex flex-col lg:flex-row items-baseline mb-4">
+        <p className="mx-12 p-8 text-5xl bg-[rgba(0,0,0,0.5)] backdrop-blur-md rounded-lg text-white">
           {description}
         </p>
 
@@ -32,7 +32,7 @@ export const Skills = ({ language }) => {
       </div>
 
       <div className="flex flex-col lg:flex-row-reverse items-center">
-        <p className="p-4 text-3xl bg-[rgba(0,0,0,0.5)] backdrop-blur-md rounded-lg m-2 text-white text-end flex-1">
+        <p className="p-8 text-3xl bg-[rgba(0,0,0,0.5)] backdrop-blur-md rounded-xl mx-12 text-white text-end flex-1">
           {softSkillsDescription}
         </p>
         <div className="flex flex-2 justify-center p-4 flex-wrap lg:w-1/2 gap-4">

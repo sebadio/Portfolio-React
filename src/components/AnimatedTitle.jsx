@@ -1,6 +1,6 @@
 import React from "react";
 
-export const AnimatedTitle = ({ title }) => {
+export const AnimatedTitle = ({ title, style }) => {
   const handleTranslate = (e) => {
     if (!window.matchMedia("(any-hover: none)").matches) {
       const element = e.target;
@@ -14,7 +14,10 @@ export const AnimatedTitle = ({ title }) => {
   };
 
   return (
-    <h1 className="text-[#fc3986] flex justify-center items-center font-extrabold text-5xl">
+    <h1
+      style={style}
+      className="text-[#fc3986] flex justify-center items-center font-extrabold text-5xl z-10 bg-[rgba(0,0,0,0.75)] p-4 px-6 rounded-2xl backdrop-blur-xl"
+    >
       {title.split("").map((element, index) => (
         <pre
           key={index}

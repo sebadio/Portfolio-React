@@ -1,17 +1,16 @@
 import React from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faGithub,
-  faLinkedin,
-  faLinkedinIn,
-  faWhatsapp,
-} from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { getOffset } from "../helper/getOffset";
+import { Link } from "react-router-dom";
 
-export const InteractiveLink = ({ id, link, icono }) => {
+export const InteractiveLink = ({
+  id,
+  link,
+  icono,
+  handleMailClick = null,
+}) => {
   const handleMouseMove = (e) => {
     if (!window.matchMedia("(any-hover: none)").matches) {
       const { left, top } = getOffset(e);
@@ -62,6 +61,35 @@ export const InteractiveLink = ({ id, link, icono }) => {
       }, 250);
     }
   };
+
+  if (id === "mail") {
+    return (
+      <Link
+        onMouseEnter={(e) => {
+          handleMouseEnter(e);
+        }}
+        onMouseMove={(e) => {
+          handleMouseMove(e);
+        }}
+        onMouseLeave={(e) => {
+          handleMouseLeave(e);
+        }}
+        to="/form"
+        className="cursor-pointer w-[150px] h-[150px] text-white bg-transparent flex justify-center items-center relative active:scale-75 transition-all ease-in-out"
+        rel="noopener noreferrer"
+      >
+        <FontAwesomeIcon
+          id={id}
+          className="relative z-10 pointer-events-none w- text-3xl"
+          icon={icono}
+        />
+        <div
+          id={`${id}bg`}
+          className="absolute w-[60px] h-[60px] bg-[#fc3986] rounded-3xl pointer-events-none shadow-xl shadow-[#fc398633] bg"
+        ></div>
+      </Link>
+    );
+  }
 
   return (
     <a
