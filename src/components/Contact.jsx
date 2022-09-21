@@ -25,7 +25,7 @@ export const Contact = ({ language }) => {
       <AnimatedTitle title={title} />
 
       <div className="flex flex-wrap flex-col lg:flex-row justify-evenly w-full">
-        <div className="flex flex-1 flex-wrap lg:flex-nowrap lg:flex-row w-full items-center justify-center py-4">
+        <div className="flex flex-1 flex-wrap lg:flex-nowrap lg:flex-row w-full items-center justify-center lg:gap-4 py-4">
           <InteractiveLink
             id={"linkedin"}
             link={linkedin}
