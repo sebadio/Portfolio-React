@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
-import React from "react";
-import { animation } from "../helper/animation";
-import { AnimatedTitle } from "./AnimatedTitle";
+import { animation } from "../helper/";
+import { AnimatedTitle } from "../components/";
 
 export const About = ({ language, type }) => {
   const { title, description, age, nationality, residence, email, phone } =

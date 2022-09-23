@@ -1,10 +1,7 @@
 import { motion } from "framer-motion";
-import React, { useState } from "react";
-import { animation } from "../helper/animation";
-import { useModal } from "../hooks/useModal";
-import { AnimatedTitle } from "./AnimatedTitle";
-import { InteractiveDiv } from "./InteractiveDiv";
-import { Modal } from "./Modal";
+import { animation } from "../helper/";
+import { useModal } from "../hooks/";
+import { AnimatedTitle, InteractiveDiv, Modal } from "../components/";
 
 export const Courses = ({ language, type }) => {
   const { title, description, coursesArray } = language;

@@ -1,14 +1,12 @@
-import React from "react";
 import {
   faGithub,
   faLinkedinIn,
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
-import { InteractiveLink } from "./InteractiveLink";
-import { AnimatedTitle } from "./AnimatedTitle";
 import { motion } from "framer-motion";
-import { animation } from "../helper/animation";
+import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { InteractiveLink, AnimatedTitle } from "../components/";
+import { animation } from "../helper/";
 
 export const Contact = ({ language }) => {
   const { title, linkedin, github, mail, phone, whatsapp } = language;

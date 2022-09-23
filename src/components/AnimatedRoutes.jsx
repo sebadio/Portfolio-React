@@ -1,4 +1,6 @@
-import React from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
+
 import {
   Root,
   About,
@@ -7,10 +9,8 @@ import {
   Languages,
   Proyects,
   Skills,
-} from "./index";
-import { Routes, Route, useLocation } from "react-router-dom";
-import { AnimatePresence } from "framer-motion";
-import { Form } from "./Form";
+  Form,
+} from "../pages";
 
 export const AnimatedRoutes = ({ t }) => {
   const location = useLocation();

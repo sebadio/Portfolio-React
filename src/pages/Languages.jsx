@@ -1,8 +1,6 @@
 import { motion } from "framer-motion";
-import React from "react";
-import { animation } from "../helper/animation";
-import { AnimatedTitle } from "./AnimatedTitle";
-import { LanguageCard } from "./LanguageCard";
+import { animation } from "../helper/";
+import { AnimatedTitle, LanguageCard } from "../components/";
 
 export const Languages = ({ language }) => {
   const { title, description, es, en } = language;

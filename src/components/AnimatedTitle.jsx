@@ -1,5 +1,3 @@
-import React from "react";
-
 export const AnimatedTitle = ({ title, style }) => {
   const handleTranslate = (e) => {
     if (!window.matchMedia("(any-hover: none)").matches) {

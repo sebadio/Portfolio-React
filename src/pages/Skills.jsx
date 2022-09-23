@@ -1,8 +1,6 @@
 import { motion } from "framer-motion";
-import React from "react";
-import { animation } from "../helper/animation";
-import { AnimatedTitle } from "./AnimatedTitle";
-import { TechnicalSkill } from "./TechnicalSkill";
+import { animation } from "../helper/";
+import { AnimatedTitle, TechnicalSkill } from "../components/";
 
 export const Skills = ({ language }) => {
   const { title, description, skillsArray, softSkillsDescription, softSkills } =

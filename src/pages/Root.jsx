@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { animation } from "../helper/animation";
+import { animation } from "../helper/";
 import { useState } from "react";
 
 export const Root = ({ language }) => {
