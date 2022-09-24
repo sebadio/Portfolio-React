@@ -35,7 +35,7 @@ export const Form = ({ language }) => {
       >
         <AnimatedTitle
           style={{ backgroundColor: "transparent", backdropFilter: "none" }}
-          title={"Form"}
+          title={name === "Name" ? "Form" : "Formulario"}
         />
         <button
           onClick={() => navigate(-1)}
