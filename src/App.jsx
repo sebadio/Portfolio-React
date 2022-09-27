@@ -1,5 +1,5 @@
 import React, { Suspense } from "react";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, HashRouter } from "react-router-dom";
 
 import { NavBar, SwitchLanguage } from "./components";
 
@@ -22,13 +22,13 @@ const App = () => {
           </div>
         }
       >
-        <BrowserRouter basename="/Portfolio-React/">
+        <HashRouter>
           <Blob child={1} />
           <Blob child={2} />
           <Blob child={3} />
           <NavBar language={t("navbar", { returnObjects: true })} />
           <AnimatedRoutes t={t} />
-        </BrowserRouter>
+        </HashRouter>
 
         <SwitchLanguage language={t("type")} changeLanguage={changeLanguage} />
       </Suspense>
