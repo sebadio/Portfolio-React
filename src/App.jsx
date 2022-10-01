@@ -1,5 +1,5 @@
 import React, { Suspense } from "react";
-import { BrowserRouter, HashRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 
 import { NavBar, SwitchLanguage } from "./components";
 
