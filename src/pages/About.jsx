@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { animation } from "../helper/";
 import { AnimatedTitle } from "../components/";
 
-export const About = ({ language, type }) => {
+const About = ({ language, type }) => {
   const { title, description, age, nationality, residence, email, phone } =
     language;
 
@@ -60,3 +60,5 @@ export const About = ({ language, type }) => {
     </motion.div>
   );
 };
+
+export default About;

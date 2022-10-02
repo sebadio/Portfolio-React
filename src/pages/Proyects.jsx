@@ -3,7 +3,7 @@ import { animation } from "../helper/";
 import { useModal } from "../hooks/useModal";
 import { AnimatedTitle, InteractiveDiv, Modal } from "../components/";
 
-export const Proyects = ({ language, type }) => {
+const Proyects = ({ language, type }) => {
   const { title, description, projectsArray } = language;
 
   const { handleCloseModal, handleShowModal, modalProps, showModal } =
@@ -60,3 +60,5 @@ export const Proyects = ({ language, type }) => {
     </motion.div>
   );
 };
+
+export default Proyects;

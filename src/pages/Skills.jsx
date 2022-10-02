@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { animation } from "../helper/";
 import { AnimatedTitle, TechnicalSkill } from "../components/";
 
-export const Skills = ({ language }) => {
+const Skills = ({ language }) => {
   const { title, description, skillsArray, softSkillsDescription, softSkills } =
     language;
 
@@ -47,3 +47,5 @@ export const Skills = ({ language }) => {
     </motion.div>
   );
 };
+
+export default Skills;

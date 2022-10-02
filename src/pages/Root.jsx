@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { animation } from "../helper/";
 import { useState } from "react";
 
-export const Root = ({ language }) => {
+const Root = ({ language }) => {
   const { initial, animate, exit } = animation;
   const [isLoading, setIsLoading] = useState(true);
 
@@ -58,3 +58,5 @@ export const Root = ({ language }) => {
     </motion.div>
   );
 };
+
+export default Root;

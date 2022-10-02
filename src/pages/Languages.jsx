@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { animation } from "../helper/";
 import { AnimatedTitle, LanguageCard } from "../components/";
 
-export const Languages = ({ language }) => {
+const Languages = ({ language }) => {
   const { title, description, es, en } = language;
 
   const { initial, animate, exit } = animation;
@@ -26,3 +26,5 @@ export const Languages = ({ language }) => {
     </motion.div>
   );
 };
+
+export default Languages;
