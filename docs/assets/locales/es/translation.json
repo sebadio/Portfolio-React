@@ -28,31 +28,31 @@
     "skillsArray": [
       {
         "title": "Bootstrap",
-        "imgLink": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/skills/Bootstrap.png"
+        "imgLink": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/skills/Bootstrap.webp"
       },
       {
         "title": "HTML 5",
-        "imgLink": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/skills/HTML5.png"
+        "imgLink": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/skills/HTML5.webp"
       },
       {
         "title": "JavaScript",
-        "imgLink": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/skills/JScript.png"
+        "imgLink": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/skills/JScript.webp"
       },
       {
         "title": "CSS",
-        "imgLink": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/skills/css.png"
+        "imgLink": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/skills/css.webp"
       },
       {
         "title": "Git",
-        "imgLink": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/skills/git.png"
+        "imgLink": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/skills/git.webp"
       },
       {
         "title": "React",
-        "imgLink": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/skills/react.png"
+        "imgLink": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/skills/react.webp"
       },
       {
         "title": "Tailwind",
-        "imgLink": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/skills/tailwind.png"
+        "imgLink": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/skills/tailwind.webp"
       }
     ],
     "description": "Como he mencionado antes, mis principales habilidades caen en el lado del front-end, y por lo tanto estas son las herramientas con las que trabajo.",
@@ -77,19 +77,19 @@
         "title": "Ultimate Web",
         "description": "Aprende Desarrollo Web con HTML, CSS, Bootstrap, ES6 React y Node",
         "link": "https://www.udemy.com/course/ultimate-web/",
-        "image": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/courses/ulimate_web.jpg"
+        "image": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/courses/ulimate_web.webp"
       },
       {
         "title": "React: de cero a experto",
         "description": "Context API, MERN, Hooks, Firestore, JWT, Testing, Autenticaciones, Despliegues, CRUD, Logs, MUI, Multiple Routers...",
         "link": "https://www.udemy.com/course/react-cero-experto/",
-        "image": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/courses/react_cero_experto.jpg"
+        "image": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/courses/react_cero_experto.webp"
       },
       {
         "title": "Aprende JS HTML CSS",
         "description": "Aprende los lenguajes que dominan el Internet: JavaScript, HTML5 and CSS3.",
         "link": "https://www.udemy.com/course/fundamentos-de-programacion-con-javascript/",
-        "image": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/courses/aprende_js_html_css.jpg"
+        "image": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/courses/aprende_js_html_css.webp"
       }
     ]
   },
@@ -102,7 +102,7 @@
         "description": "Wordle fue tendencia en juegos de 2022 durante un tiempo, y pensé en hacer un Wordle... ¡pero con Pokemon en su lugar!",
         "linkToPage": "https://sebadio.github.io/PokeWordle/",
         "linkToGit": "https://github.com/sebadio/PokeWordle",
-        "image": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/projects/PokeWordle.png",
+        "image": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/projects/PokeWordle.webp",
         "disabled": "false"
       },
       {
@@ -110,7 +110,7 @@
         "description": "Un generador de contraseñas seguras, si quieres una contraseña segura para que puedas asegurarte de que tu cuenta es lo más segura posible, puedes usar esta herramienta para ayudarte.",
         "linkToPage": "https://sebadio.github.io/GeneradorPassword/",
         "linkToGit": "https://github.com/sebadio/GeneradorPassword",
-        "image": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/projects/PasswordGen.png",
+        "image": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/projects/PasswordGen.webp",
         "disabled": "false"
       },
       {
@@ -118,7 +118,7 @@
         "description": "Una 'To Do App' hecha con JS, CSS y HTML.",
         "linkToPage": "https://sebadio.github.io/ToDoApp/",
         "linkToGit": "https://github.com/sebadio/ToDoApp",
-        "image": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/projects/ToDoApp.png",
+        "image": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/projects/ToDoApp.webp",
         "disabled": "false"
       },
       {
@@ -126,7 +126,7 @@
         "description": "Pomodoro es una técnica de concentración por la que suelo optar para estudiar. Entonces decidí hacer mi propia aplicación Pomodoro de escritorio con Electron.",
         "linkToPage": "https://github.com/sebadio/PomodoroApp",
         "linkToGit": "https://github.com/sebadio/PomodoroApp/releases/tag/PomodoroV1.2",
-        "image": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/projects/PomodoroApp.png",
+        "image": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/projects/PomodoroApp.webp",
         "disabled": "true"
       },
       {
@@ -134,7 +134,7 @@
         "description": "Una simple galería hecha con React. Todas las imágenes no tienen derechos de autor y fueron puestas gratuitamente en Unsplash.",
         "linkToPage": "https://sebadio.github.io/React-Gallery/",
         "linkToGit": "https://github.com/sebadio/React-Gallery",
-        "image": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/projects/React-Gallery.png",
+        "image": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/projects/React-Gallery.webp",
         "disabled": "false"
       },
       {
@@ -142,7 +142,7 @@
         "description": "JAP ('Jovenes a Programar') es un programa uruguayo que enseña a los jóvenes del país a programar, esta fue una experiencia de aprendizaje basada en proyectos en la que tuvimos que averiguar cómo hacer ciertos aspectos de la página web.",
         "linkToPage": "https://sebadio.github.io/JAP-Workspace/",
         "linkToGit": "https://github.com/sebadio/JAP-Workspace",
-        "image": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/projects/JAP-Workspace.png",
+        "image": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/projects/JAP-Workspace.webp",
         "disabled": "false"
       }
     ]
