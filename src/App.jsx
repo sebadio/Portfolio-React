@@ -1,15 +1,16 @@
 import React, { Suspense } from "react";
 import { HashRouter } from "react-router-dom";
 
-import { NavBar, SwitchLanguage } from "./components";
+import { SwitchLanguage } from "./components";
+import NavBar from "./components/NavBar";
 
 import { useTranslation } from "react-i18next";
 import { changeLanguage } from "./helper/changeLanguage";
 
 import "./index.css";
-import { AnimatedRoutes } from "./components/AnimatedRoutes";
-import { Blob } from "./components/Blob";
+import Blob from "./components/Blob";
 import Fallback from "./components/Fallback";
+const AnimatedRoutes = React.lazy(() => import("./components/AnimatedRoutes"));
 
 const App = () => {
   const { t } = useTranslation();

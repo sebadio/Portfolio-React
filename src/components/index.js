@@ -1,11 +1,10 @@
-export { AnimatedRoutes } from "./AnimatedRoutes";
 export { AnimatedTitle } from "./AnimatedTitle";
-export { Blob } from "./Blob";
+export * from "./Blob";
 export { InteractiveDiv } from "./InteractiveDiv";
 export { InteractiveLink } from "./InteractiveLink";
 export { LanguageCard } from "./LanguageCard";
 export { Modal } from "./Modal";
-export { NavBar } from "./NavBar";
+export * from "./NavBar";
 export { ProjectLink } from "./ProjectLink";
 export { SwitchLanguage } from "./SwitchLanguage";
 export { TechnicalSkill } from "./TechnicalSkill";

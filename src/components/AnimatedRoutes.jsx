@@ -12,7 +12,7 @@ const Proyects = React.lazy(() => import("../pages/Proyects"));
 const Root = React.lazy(() => import("../pages/Root"));
 const Skills = React.lazy(() => import("../pages/Skills"));
 
-export const AnimatedRoutes = ({ t }) => {
+const AnimatedRoutes = ({ t }) => {
   const location = useLocation();
 
   return (
@@ -75,3 +75,5 @@ export const AnimatedRoutes = ({ t }) => {
     </Suspense>
   );
 };
+
+export default AnimatedRoutes;
