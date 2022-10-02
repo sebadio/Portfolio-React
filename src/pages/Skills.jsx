@@ -10,19 +10,19 @@ const Skills = ({ language }) => {
 
   return (
     <motion.div
-      className="w-full h-full flex flex-col lg:justify-evenly pb-[10vh] lg:pb-0 lg:ml-[5vw] pt-4 items-center overflow-auto"
+      className="w-full h-full flex flex-col pb-[10vh] lg:pb-0 lg:ml-[5vw] pt-4 items-center overflow-auto"
       initial={initial}
       animate={animate}
       exit={exit}
     >
       <AnimatedTitle title={title} />
 
-      <div className="flex flex-col lg:flex-row items-baseline mb-4">
-        <p className="m-2 lg:mx-12 p-8 text-5xl bg-[rgba(0,0,0,0.5)] backdrop-blur-md rounded-lg text-white">
+      <div className="flex mt-4 lg:mt-0 flex-col lg:flex-row mb-4">
+        <p className="m-2 h-min lg:w-2/3 lg:mx-12 p-8 text-3xl lg:text-5xl bg-[rgba(0,0,0,0.5)] backdrop-blur-md rounded-lg text-white">
           {description}
         </p>
 
-        <div className="flex w-full flex-wrap justify-center items-baseline h-full p-4 lg:p-0 lg:gap-4">
+        <div className="flex flex-wrap justify-center items-center p-4 lg:p-0 lg:gap-4">
           {skillsArray.map(({ title, imgLink }) => (
             <TechnicalSkill key={title} title={title} imgLink={imgLink} />
           ))}

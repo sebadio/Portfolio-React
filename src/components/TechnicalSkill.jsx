@@ -6,8 +6,8 @@ export const TechnicalSkill = ({ title, imgLink }) => {
   return (
     <div
       after={title}
-      className={`flex flex-col items-center w-1/3 aspect-square lg:w-[9vw] mt-4 lg:mt-0  transition-all 
-                hover:after:text-[#fc3986] after:transition-all after:content-[attr(after)] after:-bottom-4 bg-[rgba(0,0,0,0.5)] backdrop-blur-md p-2 rounded-xl m-1
+      className={`flex flex-col gap-1 items-center w-1/3 h-auto overflow-hidden aspect-square lg:w-[9vw] mt-4 lg:mt-0 transition-all backdrop-blur-md p-2 rounded-xl m-1 bg-[rgba(0,0,0,0.5)] 
+                hover:after:text-[#fc3986] after:transition-all after:content-[attr(after)] after:-bottom-4  
                  after:left-0 after:rounded-full after:flex after:justify-center 
                  after:items-center after:font-semibold after:text-white after:text-center after:w-[90%] after:h-5`}
     >
@@ -23,9 +23,9 @@ export const TechnicalSkill = ({ title, imgLink }) => {
 
       <img
         onLoad={() => setIsLoading(false)}
-        className={`w-full${!isLoading ? "hidden" : ""}`}
+        className={`w-9/12 ${isLoading ? "hidden" : ""}`}
         src={imgLink}
-        alt={title}
+        alt={title + "image"}
       />
     </div>
   );

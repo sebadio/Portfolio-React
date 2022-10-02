@@ -14,7 +14,7 @@ export const AnimatedTitle = ({ title, style }) => {
   return (
     <h1
       style={style}
-      className="text-[#fc3986] flex justify-center items-center font-extrabold text-5xl z-10 bg-[rgba(0,0,0,0.75)] p-4 px-6 rounded-2xl backdrop-blur-xl"
+      className="text-[#fc3986] flex justify-center items-center font-extrabold text-4xl lg:text-5xl z-10 bg-[rgba(0,0,0,0.75)] p-4 px-6 rounded-2xl backdrop-blur-xl"
     >
       {title.split("").map((element, index) => (
         <pre
