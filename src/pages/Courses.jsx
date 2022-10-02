@@ -3,7 +3,7 @@ import { animation } from "../helper/";
 import { useModal } from "../hooks/";
 import { AnimatedTitle, InteractiveDiv, Modal } from "../components/";
 
-export const Courses = ({ language, type }) => {
+const Courses = ({ language, type }) => {
   const { title, description, coursesArray } = language;
 
   const { handleCloseModal, handleShowModal, modalProps, showModal } =
@@ -56,3 +56,5 @@ export const Courses = ({ language, type }) => {
     </motion.div>
   );
 };
+
+export default Courses;

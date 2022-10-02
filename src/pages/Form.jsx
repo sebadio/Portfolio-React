@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
 
-export const Form = ({ language }) => {
+const Form = ({ language }) => {
   const { animate, exit, initial } = animation;
 
   const { form } = language;
@@ -89,3 +89,5 @@ export const Form = ({ language }) => {
     </motion.div>
   );
 };
+
+export default Form;

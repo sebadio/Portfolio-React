@@ -8,7 +8,7 @@ import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { InteractiveLink, AnimatedTitle } from "../components/";
 import { animation } from "../helper/";
 
-export const Contact = ({ language }) => {
+const Contact = ({ language }) => {
   const { title, linkedin, github, mail, phone, whatsapp } = language;
 
   const { initial, animate, exit } = animation;
@@ -38,3 +38,5 @@ export const Contact = ({ language }) => {
     </motion.div>
   );
 };
+
+export default Contact;

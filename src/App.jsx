@@ -1,27 +1,23 @@
 import React, { Suspense } from "react";
-import { BrowserRouter, HashRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 
-import { NavBar, SwitchLanguage } from "./components";
+import { SwitchLanguage } from "./components";
+import NavBar from "./components/NavBar";
 
 import { useTranslation } from "react-i18next";
 import { changeLanguage } from "./helper/changeLanguage";
 
 import "./index.css";
-import { AnimatedRoutes } from "./components/AnimatedRoutes";
-import { Blob } from "./components/Blob";
+import Blob from "./components/Blob";
+import Fallback from "./components/Fallback";
+const AnimatedRoutes = React.lazy(() => import("./components/AnimatedRoutes"));
 
 const App = () => {
   const { t } = useTranslation();
 
   return (
     <div className="flex w-full h-screen aniBg overflow-hidden text-[#C4C1C5]">
-      <Suspense
-        fallback={
-          <div className="w-full h-screen flex justify-center items-center">
-            <div className="w-8 aspect-square h-auto p-2 border-4 border-[#fc3986] border-t-[rgba(0,0,0,0.3)] border-l-[rgba(0,0,0,0.3)] rounded-full animate-spin"></div>
-          </div>
-        }
-      >
+      <Suspense fallback={<Fallback />}>
         <HashRouter>
           <Blob child={1} />
           <Blob child={2} />

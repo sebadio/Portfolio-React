@@ -10,9 +10,9 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import { NavLink } from "react-router-dom";
-import { useState } from "react";
+import React, { useState } from "react";
 
-export const NavBar = ({ language }) => {
+const NavBar = ({ language }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -161,3 +161,5 @@ export const NavBar = ({ language }) => {
     </nav>
   );
 };
+
+export default React.memo(NavBar);

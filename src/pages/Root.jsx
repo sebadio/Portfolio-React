@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { animation } from "../helper/";
 import { useState } from "react";
 
-export const Root = ({ language }) => {
+const Root = ({ language }) => {
   const { initial, animate, exit } = animation;
   const [isLoading, setIsLoading] = useState(true);
 
@@ -31,7 +31,7 @@ export const Root = ({ language }) => {
           onLoad={() => setIsLoading(false)}
           id="photo"
           className="max-h-full rounded-3xl"
-          src="https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/FotoCV.jpg"
+          src="https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/FotoCV.webp"
         />
 
         <div className="absolute bottom-0 h-1/3 w-full flex flex-col justify-center rounded-b-3xl items-center gap-4 md:gap-12 backdrop-blur-xl">
@@ -58,3 +58,5 @@ export const Root = ({ language }) => {
     </motion.div>
   );
 };
+
+export default Root;
