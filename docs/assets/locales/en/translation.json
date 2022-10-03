@@ -144,6 +144,14 @@
         "linkToGit": "https://github.com/sebadio/JAP-Workspace",
         "image": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/projects/JAP-Workspace.webp",
         "disabled": "false"
+      },
+      {
+        "title": "Weather App",
+        "description": "A weather application, made with vanilla JavaScript and Bootstrap, which makes use of the free OpenWeather API.",
+        "linkToPage": "https://sebadio.github.io/App-del-tiempo/",
+        "linkToGit": "https://github.com/sebadio/App-del-tiempo",
+        "image": "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/projects/WeatherApp.webp",
+        "disabled": "false"
       }
     ]
   },
