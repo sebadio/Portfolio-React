@@ -11,6 +11,7 @@ const Languages = React.lazy(() => import("../pages/Languages"));
 const Proyects = React.lazy(() => import("../pages/Proyects"));
 const Root = React.lazy(() => import("../pages/Root"));
 const Skills = React.lazy(() => import("../pages/Skills"));
+const ThankYou = React.lazy(() => import("../pages/ThankYou"));
 
 const AnimatedRoutes = ({ t }) => {
   const location = useLocation();
@@ -69,6 +70,12 @@ const AnimatedRoutes = ({ t }) => {
           <Route
             path="/form"
             element={<Form language={t("contact", { returnObjects: true })} />}
+          />
+          <Route
+            path="/thankYou"
+            element={
+              <ThankYou language={t("contact", { returnObjects: true })} />
+            }
           />
         </Routes>
       </AnimatePresence>

@@ -30,8 +30,9 @@ const Form = ({ language }) => {
       exit={exit}
     >
       <form
+        action="https://formsubmit.co/sebastiandiazdopazo@gmail.com"
+        method="POST"
         className="relative flex w-full lg:w-3/4 items-center flex-col gap-4 mt-4 lg:mt-12 bg-[rgba(0,0,0,0.5)] backdrop-blur-xl rounded-xl p-2 shadow-xl shadow-[rgba(0,0,0,0.5)]"
-        action=""
       >
         <AnimatedTitle
           style={{ backgroundColor: "transparent", backdropFilter: "none" }}
@@ -47,10 +48,26 @@ const Form = ({ language }) => {
           />
         </button>
 
+        <input
+          type="hidden"
+          name="_autoresponse"
+          value={
+            name === "Name"
+              ? "Thank you for contacting me, your mail was successfully sent and I will be contacting you right away."
+              : "Gracias por contactarte conmigo, tu mail fue enviado correctamente y te respondere en cuanto lo lea."
+          }
+        ></input>
+        <input
+          type="hidden"
+          name="_next"
+          value="https://sebadio.github.io/Portafolio/#/thankYou"
+        ></input>
+
         <h3 className="z-10 flex w-full lg:w-3/4 mt-4 text-white font-semibold rounded-full p-2 px-4">
           {name} *
         </h3>
         <input
+          name="name"
           required
           type="text"
           className="z-10 p-4 w-full rounded-full lg:w-3/4 bg-[rgba(0,0,0,0.65)] text-white border-2 border-[#fc3986] transition-all focus:shadow-lg focus:shadow-[rgba(255,255,255,0.1)] focus:border-[#ffffff] formInput"
@@ -61,6 +78,7 @@ const Form = ({ language }) => {
           {email} *
         </h3>
         <input
+          name="email"
           required
           type="text"
           className="z-10 p-4 w-full rounded-full lg:w-3/4 bg-[rgba(0,0,0,0.65)] text-white border-2 border-[#fc3986] transition-all focus:shadow-lg focus:shadow-[rgba(255,255,255,0.1)] focus:border-[#ffffff] formInput"
@@ -72,7 +90,7 @@ const Form = ({ language }) => {
         </h3>
         <textarea
           className="z-10 resize-none p-4 w-full rounded-xl lg:w-3/4 bg-[rgba(0,0,0,0.65)] text-white border-2 border-[#fc3986] transition-all focus:shadow-lg focus:shadow-[rgba(255,255,255,0.1)] focus:border-[#ffffff] formInput"
-          name="textarea"
+          name="description"
           id="textarea"
           cols="30"
           rows="10"
