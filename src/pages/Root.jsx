@@ -31,7 +31,7 @@ const Root = ({ language }) => {
           onLoad={() => setIsLoading(false)}
           id="photo"
           className="max-h-full rounded-3xl"
-          src="https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/FotoCV.webp"
+          src="https://sebadio.github.io/Portafolio/assets/FotoCV.webp"
         />
 
         <div className="absolute bottom-0 h-1/3 w-full flex flex-col justify-center rounded-b-3xl items-center gap-4 md:gap-12 backdrop-blur-xl">

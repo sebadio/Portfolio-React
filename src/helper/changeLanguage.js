@@ -12,7 +12,7 @@ i18n
     fallbackLng: "en",
     backend: {
       loadPath:
-        "https://sebadio.github.io/Portfolio-React/assets/locales/{{lng}}/translation.json",
+        "https://sebadio.github.io/Portafolio/assets/locales/{{lng}}/translation.json",
     },
     detection: {
       order: ["cookie", "localStorage", "htmlTag", "path", "subdomain"],

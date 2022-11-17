@@ -17,8 +17,8 @@ export const SwitchLanguage = ({ language, changeLanguage }) => {
       className="rounded-full z-50 w-[3rem] h-[3rem] lg:w-auto lg:h-auto fixed top-2 right-4 shadow-lg shadow-black opacity-40 transition-opacity hover:opacity-100 hover:cursor-pointer"
       src={
         language === "es"
-          ? "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/locales/es/spanish64.png"
-          : "https://raw.githubusercontent.com/sebadio/Portfolio-React/main/docs/assets/locales/en/english64.png"
+          ? "https://sebadio.github.io/Portafolio/assets/locales/es/spanish64.png"
+          : "https://sebadio.github.io/Portafolio/assets/locales/en/english64.png"
       }
       alt={language === "es" ? "Cambiar Lenguage" : "Change Language"}
     />
